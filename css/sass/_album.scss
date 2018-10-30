@@ -1,0 +1,45 @@
+h3.title-section {
+  font-size: 40px;
+  @include transition(all .3s ease-in-out);
+  @include hoverColor($secondColor, $extraColor);
+  @include mq('mobile') {
+    font-size: 30px;
+  }
+  & + p {
+    font-family: $font2;
+    font-size: 17px;
+    color: $secondColor;
+  }
+}
+
+.extern-players {
+  margin: 40px 0;
+  @include transition(all .2s ease-in-out);
+  @include border-radius(6px);
+  &:hover {
+    padding: 6px;
+    @include box-shadow(inset 0 0 10px $extraColor);
+  }
+}
+
+.album-description {
+  p, span {
+    font-family: $font2;
+    font-size: 18px;
+    color: $secondColor;
+  }
+}
+
+.musics{
+  background: #FFF;
+  margin: 65px auto;
+  .title-section {
+    background: $extraColor;
+    font-family: $font3;
+    color: $secondColor;
+    line-height: 2;
+  }
+  .musics-description {
+    
+  }
+}

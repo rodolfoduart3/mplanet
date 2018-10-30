@@ -1,17 +1,27 @@
 body {
-  // font-family: 'Open Sans', sans-serif;
   font-family: $font1;
-  // font-family: $font2;
-  // font-family: $font3;
+  background: $primaryColor;
 }
 
-nav ul a,
-nav .brand-logo {
-  color: #444;
+nav {
+  background: $primaryColor;
+  ul {
+    a {
+      color: $secondColor;
+    }
+  }
+  .brand-logo {
+    color: $secondColor;
+  }
 }
 
-p {
-  line-height: 2rem;
+::selection {
+  background: $extraColor;
+  color: $secondColor; 
+}
+
+.parallax-container .parallax img {
+  width: 100%;
 }
 
 .sidenav-trigger {
@@ -53,18 +63,4 @@ p {
 
 footer.page-footer {
   margin: 0;
-}
-
-h3.title-section {
-  @include hoverColor(#000,#55715B);
-  &:after{
-    @include pseudo;
-  }
-  @include transition(all .3s ease-in-out);
-  // @include mq('mobile') {
-  //   color: red;
-  // }
-  // @include mq('small-mobile') {
-  //   color: blue;
-  // }
 }
