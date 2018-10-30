@@ -30,16 +30,53 @@ h3.title-section {
   }
 }
 
-.musics{
-  background: #FFF;
+.musics {
+  background: lighten($primaryColor, 15%);
+  color: darken($secondColor, 60%);
   margin: 65px auto;
+  text-align: center;
+  @include mq('mobile') {
+    color: $secondColor;
+  }
   .title-section {
     background: $extraColor;
     font-family: $font3;
-    color: $secondColor;
+    color: $secondColor; 
     line-height: 2;
   }
   .musics-description {
-    
+    .music-block {
+      @include transition(all .4s ease-in-out);
+      &:hover {
+        color: $secondColor;
+        // border: 1px solid $extraColor;
+      }
+    }
+  }
+  
+  .slick-dots {
+    @include mq('mobile') {
+      bottom: -35px;
+    }
+    li button:before {
+      color: $extraColor;
+      font-size: 12px;
+    }
+  }
+  .slick-prev {
+    @include mq('mobile') {
+      left: 15px;
+    }
+    &:before {
+      @include arrow($extraColor, 'oeste', 5px, 25px);
+    }
+  }
+  .slick-next {
+    @include mq('mobile') {
+      right: 15px;
+    }
+    &:before {
+      @include arrow($extraColor, 'leste', 5px, 25px);
+    }
   }
 }

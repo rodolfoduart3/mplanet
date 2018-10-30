@@ -5,6 +5,9 @@ body {
 
 nav {
   background: $primaryColor;
+  a.sidenav-trigger {
+    display: block !important;
+  }
   ul {
     a {
       color: $secondColor;
@@ -12,6 +15,9 @@ nav {
   }
   .brand-logo {
     color: $secondColor;
+    @include mq('mobile'){
+      font-size: 20px;
+    }
   }
 }
 
