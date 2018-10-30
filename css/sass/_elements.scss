@@ -51,3 +51,16 @@ p {
 footer.page-footer {
   margin: 0;
 }
+
+h3.title-section {
+  &:after{
+    @include pseudo;
+  }
+  @include transition(all .3s ease-in-out);
+  @include mq('mobile') {
+    color: red;
+  }
+  @include mq('small-mobile') {
+    color: blue;
+  }
+}
