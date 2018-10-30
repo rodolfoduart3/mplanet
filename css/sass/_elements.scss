@@ -53,14 +53,15 @@ footer.page-footer {
 }
 
 h3.title-section {
+  @include hoverColor(#000,#55715B);
   &:after{
     @include pseudo;
   }
   @include transition(all .3s ease-in-out);
-  @include mq('mobile') {
-    color: red;
-  }
-  @include mq('small-mobile') {
-    color: blue;
-  }
+  // @include mq('mobile') {
+  //   color: red;
+  // }
+  // @include mq('small-mobile') {
+  //   color: blue;
+  // }
 }

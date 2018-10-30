@@ -33,11 +33,16 @@ $breakpoints: (
   position: $pos;
 }
 
+// Change color w/ Hover
+@mixin hoverColor($colorMain, $colorHover) {
+	color: $colorMain;
+  cursor: pointer;
+	&:hover { color: $colorHover; }
+}
+
 // Prefix CSS
 @mixin prefix($property, $parameters...) {
-  @each $prefix in -webkit-, -moz-, -ms-, -o-, "" {
-    #{$prefix}#{$property}: $parameters;
-  }
+  @each $prefix in -webkit-, -moz-, -ms-, -o-, "" { #{$prefix}#{$property}: $parameters; }
 }
 
 // Mixins w/ Prefix CSS
@@ -47,3 +52,82 @@ $breakpoints: (
 @mixin filter($value) { @include prefix("filter", $value); }
 @mixin box-shadow($value) { @include prefix("box-shadow", $value); }
 @mixin border-radius($value) { @include prefix("border-radius", $value); }
+
+// Arrows
+@mixin arrow($color, $direction: leste, $thickness: 4px, $size: 10px) {
+	content: '';
+	display: inline-block;
+	border-top: $thickness solid $color;
+	border-left: $thickness solid $color;
+	height: $size;
+	width: $size;
+  
+	@if $direction == "norte" {	@include transform(rotate(45deg)); } // north
+	@else if $direction == "nordeste" { @include transform(rotate(90deg)); } // northeast
+	@else if $direction == "leste" { @include transform(rotate(135deg)); } // east
+	@else if $direction == "sudeste" { @include transform(rotate(180deg)); } // southeast
+	@else if $direction == "sul" { @include transform(rotate(225deg)); } // south
+	@else if $direction == "sudoeste" { @include transform(rotate(270deg)); } // south-west
+	@else if $direction == "oeste" { @include transform(rotate(315deg)); } // west
+}
+
+// Positions
+@mixin position($type, $top: $position-default, $right: $position-default, $bottom: $position-default, $left: $position-default) {
+	position: $type;
+	$allowed_types: absolute relative fixed;
+	@if not index($allowed_types, $type) {
+		@warn "Unknown position: #{$type}.";
+	}
+	@each $data in top $top, right $right, bottom $bottom, left $left {
+		#{nth($data, 1)}: nth($data, 2);
+	}
+}
+@mixin absolute($top: $position-default, $right: $position-default, $bottom: $position-default, $left: $position-default) {
+	@include position(absolute, $top, $right, $bottom, $left);
+}
+@mixin relative($top: $position-default, $right: $position-default, $bottom: $position-default, $left: $position-default) {
+	@include position(relative, $top, $right, $bottom, $left);
+}
+@mixin fixed($top: $position-default, $right: $position-default, $bottom: $position-default, $left: $position-default) {
+	@include position(fixed, $top, $right, $bottom, $left);
+}
+
+// Push Auto
+@mixin pushauto {
+	margin-right: auto;
+	margin-left: auto;
+}
+
+// Absolute Position - Center
+@mixin absolutecenter($axis: "both") {
+	position: absolute;
+	@if $axis == "y" {
+		top: 50%;
+		@include transform(translateY(-50%));
+	}
+	@if $axis == "x" {
+		left: 50%;
+		@include transform(translateX(-50%));
+	}
+	@if $axis == "both" {
+		top: 50%;
+		left: 50%;
+		@include transform(translate(-50%, -50%));
+	}
+}
+
+%full {
+	float: left;
+	width: 100%;
+	clear: both;
+	&:after {
+		content: '';
+		display: table;
+		line-height: 0;
+		clear: both;
+	}
+}
+
+%pushauto {
+	@include pushauto;
+}
