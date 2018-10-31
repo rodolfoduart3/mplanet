@@ -5,9 +5,6 @@ body {
 
 nav {
   background: $primaryColor;
-  a.sidenav-trigger {
-    display: block !important;
-  }
   ul {
     a {
       color: $secondColor;

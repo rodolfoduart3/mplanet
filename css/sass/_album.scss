@@ -43,17 +43,26 @@ h3.title-section {
     font-family: $font3;
     color: $secondColor; 
     line-height: 2;
+    margin: 0;
   }
   .musics-description {
     .music-block {
+      height: 100%;
+      padding-top: 10px;
       @include transition(all .4s ease-in-out);
       &:hover {
         color: $secondColor;
-        // border: 1px solid $extraColor;
+      }
+      .music-name {
+        font-size: 20px;
+        margin: 10px 0;
+        & + p {
+          font-size: 14px;
+          padding: 0 15px 10px;
+        }
       }
     }
   }
-  
   .slick-dots {
     @include mq('mobile') {
       bottom: -35px;
