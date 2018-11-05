@@ -1,6 +1,10 @@
-<!DOCTYPE html>
-<html lang="en">
+<?php 
+  //require_once('language/portuguese.php');
+  require_once('language/english.php');
+?>
 
+<!DOCTYPE html>
+<html>
 <head>
   <title>Madomo Planet | Music</title>
   
@@ -33,14 +37,14 @@
     <div class="nav-wrapper container">
       <a id="logo-container" href="#" class="brand-logo">Madomo Planet</a>
       <ul class="right hide-on-med-and-down">
-        <li><a href="#">Bio</a></li>
-        <li><a href="#">Music</a></li>
-        <li><a href="contact.php">Contact</a></li>
+        <li><a href="#"><?php echo $bio; ?></a></li>
+        <li><a href="#"><?php echo $music; ?></a></li>
+        <li><a href="contact.php"><?php echo $contact; ?></a></li>
       </ul>
       <ul id="nav-mobile" class="sidenav">
-        <li><a href="#">Bio</a></li>
-        <li><a href="#">Music</a></li>
-        <li><a href="#">Contact</a></li>
+        <li><a href="#"><?php echo $bio; ?></a></li>
+        <li><a href="#"><?php echo $music; ?></a></li>
+        <li><a href="#"><?php echo $contact; ?></a></li>
       </ul>
       <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
     </div>
@@ -58,8 +62,8 @@
   
   <section class="main-information">
     <div class="container">
-      <h3 class="title-section center">meu novo álbum, meu novo propósito.</h3>
-      <p class="desc-section center">esqueça tudo ao seu redor. deixe de lado sua ipocrisia e abra sua mente.</p>
+      <h3 class="title-section center"><?php echo $mainInfo_title; ?></h3>
+      <p class="desc-section center"><?php echo $mainInfo_desc; ?></p>
       <div class="extern-players">
         <iframe src="https://open.spotify.com/embed/user/madomoplanet/playlist/5o4udqpVjbQtbvFXwRqiB5" width="100%" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
       </div>
@@ -68,51 +72,33 @@
   
   <section class="album-description">
     <div class="container center">
-      <p>
-        Será que para tudo existe um propósito? Ou será que apenas encaramos os fatos de maneira diferente?
-        Talvez nunca tenha refletido sobre isso, mas saiba que isso é essencial. 
-        Essencial para ser uma melhor pessoa consigo mesma. Essencial para quem te rodeia. Essencial para ser essencial.
-      </p>
-      <p>
-        Nadar contra a correnteza não é tarefa fácil, e isso já sabemos. Mas o que não nos damos conta é que nos momentos mais difíceis, a única coisa que teremos que lidar, somos nós mesmos.
-      </p>
-      <p>
-        <i>Será que o propósito da sua vida é realmente esse? Será mesmo? Pense sobre.</i>
-      </p>
-      <p>
-        São mudanças internas que vão refletir inteiramente no seu “eu”. Você não sabe o quão é capaz para seguir em frente. Sem receio de opiniões alheias, se preocupando apenas em ser você. Na mais pura essência.
-      </p>
-      <p>
-        Esse álbum marcou transições importantes em minha vida. Seja ela profissional, artística, mas principalmente pessoal. Quero que ele faça parte de transições da sua vida também. Isso é o mínimo que posso fazer como forma de retribuição à vida e por tudo que ela já me proporcionou. 
-      </p>
-      <p>
-        As músicas que o compõem poderão te fazer refletir, ou apenas dançar. Poderão lhe trazer um sorriso ou ao mesmo emocionar. Mas saiba: espero que você também se encontre. Encontre em si o seu verdadeiro propósito. 
-      </p>
+      <p><?php echo $albumDescription_p1; ?></p>
+      <p><?php echo $albumDescription_p2; ?></p>
+      <p><i><?php echo $albumDescription_p3; ?></i></p>
+      <p><?php echo $albumDescription_p4; ?></p>
+      <p><?php echo $albumDescription_p5; ?></p>
+      <p><?php echo $albumDescription_p6; ?></p>
     </div>
   </section>
 
   <section class="container musics">
-    <h4 class="center title-section">motivos e inspirações.</h4>
+    <h4 class="center title-section"><?php echo $musics_title; ?></h4>
       <div class="row musics-description">
     
         <div class="col s12 m6">
           <div class="music-block">
-            <h5 class="music-name">01 - Kiss</h5>
-            <p>
-              Tudo é rápido. Frenético. As coisas acabam e a sensação de não ter aproveitado é inevitável.
-              Faça desse momento o seu momento. Não tenha receio de ser você. Seja apenas você.
-              E quando se sentir perdido, <strong>aflore seus sentidos</strong>.
-            </p>
+            <h5 class="music-name"><?php echo $musics_track1_title; ?></h5>
+            <p><?php echo $musics_track1_desc; ?></p>
           </div>
         </div>
 
         <div class="col s12 m6">
           <div class="music-block">
-            <h5 class="music-name">02 - Smile</h5>
+            <h5 class="music-name"><?php echo $musics_track2_title ?></h5>
             <p>
               A multidão está ao redor mas a solidão ainda está presente. Te consumido por completo. 
               Force o seu grito interior suplicar por felicidade. Sim, é quase impossível. Quase.
-              Mas já que para tudo existe uma saída, para todo tipo de ausência, existe a presença do seu "eu". <strong>Apodere-se do sorriso e não deixe a angústia sufocar</strong>.
+              Mas já que para tudo existe uma saída, para todo tipo de ausência, existe a presença do seu "eu". Apodere-se do sorriso e não deixe a angústia sufocar.
             </p>
           </div>
         </div>
