@@ -3,6 +3,10 @@ body {
   background: $primaryColor;
 }
 
+.navbar-fixed {
+  z-index: 2 !important;
+}
+
 nav {
   background: $primaryColor;
   ul {
@@ -11,9 +15,51 @@ nav {
     }
   }
   .brand-logo {
-    color: $secondColor;
-    @include mq('mobile'){
-      font-size: 20px;
+    img {
+      height: 44px;
+      margin-top: 10px;
+      @include mq('mobile'){
+        height: 37px;
+      }
+    }
+  }
+  a.sidenav-trigger {
+    display: block !important;
+  }
+  .iconTranslate {
+    width: 50px;
+    text-align: center;
+    cursor: pointer;
+    position: relative;
+  }
+  .listFlags {
+    position: absolute;
+    right: -6px;
+    top: 64px;
+    background-color: rgba($primaryColor, 0.9);
+    z-index: 1;
+    @include mq('mobile') {
+      top: 55px;
+    }
+    li {
+      width: 100%;
+      height: 64px;
+      span {
+        display: inline-block;
+        vertical-align: middle;
+      }
+    }
+  }
+}
+
+#index-banner {
+  .coverContainer {
+    text-align: center;
+    img {
+      width: 560px;
+      @include mq('mobile'){
+        width: 80%;
+      }
     }
   }
 }
@@ -27,15 +73,13 @@ nav {
   width: 100%;
 }
 
-.sidenav-trigger {
-  color: #26a69a;
-}
-
 .parallax-container {
-  min-height: 380px;
-  line-height: 0;
   height: auto;
-  color: rgba(255,255,255,.9);
+  min-height: 600px;
+  line-height: 0;
+  @include mq('mobile') {
+    min-height: 300px;
+  }
 }
   .parallax-container .section {
     width: 100%;

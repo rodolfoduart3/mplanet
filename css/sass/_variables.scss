@@ -135,3 +135,7 @@ $breakpoints: (
 %pushauto {
 	@include pushauto;
 }
+
+.no-display {
+  display: none;
+}

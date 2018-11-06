@@ -4,6 +4,14 @@
     $('.sidenav').sidenav();
     $('.parallax').parallax();
     
+    $('.iconTranslate').on('click', function() {
+      $('.listFlags').slideToggle("fast");
+    });
+    
+    // $('.listFlags .flagImage').on('click', function() {
+    //   location.reload();
+    // });
+    
     $('.musics-description').slick({
       arrows: true,
       infinite: true,
