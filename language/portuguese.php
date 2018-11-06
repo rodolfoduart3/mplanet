@@ -28,10 +28,55 @@
   "Tudo é rápido. Frenético. As coisas acabam e a sensação de não ter aproveitado é inevitável.
   Faça desse momento o seu momento. Não tenha receio de ser você. Seja apenas você.
   E quando se sentir perdido, aflore seus sentidos.";
+  
   $musics_track2_title = "02 - Smile";
   $musics_track2_desc =
   "A multidão está ao redor mas a solidão ainda está presente. Te consumido por completo. 
   Force o seu grito interior suplicar por felicidade. Sim, é quase impossível. Quase.
   Mas já que para tudo existe uma saída, para todo tipo de ausência, existe a presença do seu 'eu'. Apodere-se do sorriso e não deixe a angústia sufocar.";
+  
+  $musics_track3_title = "03 - Dissipate";
+  $musics_track3_desc =
+  "Preso no meio de tanta ignorância. Não esqueça de 'ser' humano. 
+  Deixe sua bondade falar mais alto que seu ego. Você consegue. 
+  Esqueça por um instante sua singularidade. Seja plural.";
+  
+  $musics_track4_title = "04 - Thinking";
+  $musics_track4_desc =
+  "Expresse ao próximo o real motivo da sua existência. Se você ainda não à encontrou, não tenha medo de descobrir. 
+  Reflita sobre tudo e sobre todos. Reflita que o amanhã pode nem ao menos existir. 
+  Se está tudo bagunçado na mente, organização será seu dogma. Apenas você sabe o que é realmente válido levar consigo agora.";
+  
+  $musics_track5_title = "05 - Inside the Groove";
+  $musics_track5_desc =
+  "Feche os olhos e deixe seu próprio corpo responder aos comandos. 
+  Siga as instruções à risca e faça com que o ritmo lhe apodere. Simples. Apenas se entregue ao momento.
+  Isso vai ser mais forte que tudo. Você vai ser mais forte que tudo.";
+  
+  $musics_track6_title = "06 - Plot of Fear";
+  $musics_track6_desc =
+  "A rotina destrói sonhos. Aos poucos, eles se ofuscam mais e mais. 
+  Lute. Busque. Creia. Não deixe eles de lado. Nunca. 
+  Ninguém tem o direito de tirar eles de você.
+  Ninguém sabe o que você passou todos esses anos. 
+  E quando tudo implicar à desistência, desista apenas do que lhe impede.";
+  
+  $musics_track7_title = "07 - Focus";
+  $musics_track7_desc =
+  "O caminho à ser trilhado dependerá inteiramente das suas decisões. 
+  Quando sentir que o foco está sendo sobreposto, batalhe pelo autocontrole.
+  Inevitável e sem possibilidade de fuga. Dedique-se aos seus problemas. Eles precisam de solução.";
+  
+  $musics_track8_title = "08 - Voltage";
+  $musics_track8_desc =
+  "Mente inquieta. Cíclico e atormentador. O conflito interno agora predomina.
+  Sempre existirão consequências, mas no final um único vencedor.
+  E se neste momento não estiver no topo, sua meta agora é alcançá-lo.";
+  
+  $musics_track9_title = "09 - Dark Side";
+  $musics_track9_desc =
+  "Basicamente nada será básico. Não adianta complicar mais o que já é complicado por natureza. 
+  Questione. Busque. Não fuja das imperfeições. 
+  E no momento que a escuridão tomar conta, seja luz.";
   
 ?>

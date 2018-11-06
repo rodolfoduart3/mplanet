@@ -84,101 +84,59 @@
   <section class="container musics">
     <h4 class="center title-section"><?php echo $musics_title; ?></h4>
       <div class="row musics-description">
-    
+        
         <div class="col s12 m6">
           <div class="music-block">
             <h5 class="music-name"><?php echo $musics_track1_title; ?></h5>
             <p><?php echo $musics_track1_desc; ?></p>
           </div>
         </div>
-
         <div class="col s12 m6">
           <div class="music-block">
-            <h5 class="music-name"><?php echo $musics_track2_title ?></h5>
-            <p>
-              A multidão está ao redor mas a solidão ainda está presente. Te consumido por completo. 
-              Force o seu grito interior suplicar por felicidade. Sim, é quase impossível. Quase.
-              Mas já que para tudo existe uma saída, para todo tipo de ausência, existe a presença do seu "eu". Apodere-se do sorriso e não deixe a angústia sufocar.
-            </p>
+            <h5 class="music-name"><?php echo $musics_track2_title; ?></h5>
+            <p><?php echo $musics_track2_desc; ?></p>
           </div>
         </div>
-
         <div class="col s12 m6">
           <div class="music-block">
-            <h5 class="music-name">03 - Dissipate</h5>
-            <p>
-              Preso no meio de tanta ignorância. Não esqueça de "ser" humano. 
-              Deixe sua bondade falar mais alto que seu ego. Você consegue. 
-              Esqueça por um instante sua singularidade. <strong>Seja plural</strong>.
-            </p>
+            <h5 class="music-name"><?php echo $musics_track3_title; ?></h5>
+            <p><?php echo $musics_track3_desc; ?></p>
           </div>
         </div>
-        
         <div class="col s12 m6">
           <div class="music-block">
-            <h5 class="music-name">04 - Thinking</h5>
-            <p>
-              Expresse ao próximo o real motivo da sua existência. Se você ainda não a encontrou, não tenha medo de descobrir. 
-              Reflita sobre tudo e sobre todos. <strong>Reflita que o amanhã pode nem ao menos existir</strong>. 
-              Se está tudo bagunçado na mente, organização será seu dogma. Apenas você sabe o que é realmente válido levar consigo agora.
-            </p>
+            <h5 class="music-name"><?php echo $musics_track4_title; ?></h5>
+            <p><?php echo $musics_track4_desc; ?></p>
+          </div>
+        </div>        
+        <div class="col s12 m6">
+          <div class="music-block">
+            <h5 class="music-name"><?php echo $musics_track5_title; ?></h5>
+            <p><?php echo $musics_track5_desc; ?></p>
+          </div>
+        </div>        
+        <div class="col s12 m6">
+          <div class="music-block">
+            <h5 class="music-name"><?php echo $musics_track6_title; ?></h5>
+            <p><?php echo $musics_track6_desc; ?></p>
           </div>
         </div>
-        
         <div class="col s12 m6">
           <div class="music-block">
-            <h5 class="music-name">05 - Inside the Groove</h5>
-            <p>
-              Feche os olhos e deixe seu próprio corpo responder aos comandos. 
-              Siga as instruções à risca e faça com que o ritmo lhe apodere. Simples. Apenas se entregue ao momento.
-              Isso vai ser mais forte que tudo. <strong>Você vai ser mais forte que tudo</strong>.
-            </p>
+            <h5 class="music-name"><?php echo $musics_track7_title; ?></h5>
+            <p><?php echo $musics_track7_desc; ?></p>
           </div>
-        </div>
-        
+        </div>        
         <div class="col s12 m6">
           <div class="music-block">
-            <h5 class="music-name">06 - Plot of Fear</h5>
-            <p>
-              A rotina destrói sonhos. Aos poucos, eles se ofuscam mais e mais. 
-              Lute. Busque. Creia. Não deixe eles de lado. Nunca. 
-              Ninguém tem o direito de tirar eles de você.
-              Ninguém sabe o que você passou todos esses anos. 
-              E quando tudo implicar à desistência, <strong>desista apenas do que lhe impede</strong>. 
-            </p>
+            <h5 class="music-name"><?php echo $musics_track8_title; ?></h5>
+            <p><?php echo $musics_track8_desc; ?></p>
           </div>
-        </div>
-        
+        </div>        
         <div class="col s12 m6">
           <div class="music-block">
-            <h5 class="music-name">07 - Focus</h5>
-            <p>
-              O caminho à ser trilhado dependerá inteiramente das suas decisões. 
-              Quando sentir que o foco está sendo sobreposto, <strong>batalhe pelo autocontrole</strong>.
-              Inevitável e sem possibilidade de fuga. Dedique-se aos seus problemas. Eles precisam de solução.
-            </p>
-          </div>
-        </div>
-        
-        <div class="col s12 m6">
-          <div class="music-block">
-            <h5 class="music-name">08 - Voltage</h5>
-            <p>
-              Mente inquieta. Cíclico e atormentador. O conflito interno agora predomina.
-              Sempre existirão consequências, mas no final um único vencedor.
-              E se neste momento não estiver no topo, <strong>sua meta agora é alcançá-lo</strong>.
-            </p>
-          </div>
-        </div>
-        
-        <div class="col s12 m6">
-          <div class="music-block">
-            <h5 class="music-name">09 - Dark Side</h5>
-            <p>
-              Basicamente nada será básico. Não adianta complicar mais o que já é complicado por natureza. 
-              Questione. Busque. Não fuja das imperfeições. 
-              <strong>E no momento que a escuridão tomar conta, seja luz</strong>.
-            </p>
+            <h5 class="music-name"><?php echo $musics_track9_title; ?></h5>
+            <p><?php echo $musics_track9_desc; ?></p>
           </div>
         </div>
         
