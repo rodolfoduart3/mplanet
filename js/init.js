@@ -7,11 +7,7 @@
     $('.iconTranslate').on('click', function() {
       $('.listFlags').slideToggle("fast");
     });
-    
-    // $('.listFlags .flagImage').on('click', function() {
-    //   location.reload();
-    // });
-    
+
     $('.musics-description').slick({
       arrows: true,
       infinite: true,
@@ -34,5 +30,39 @@
   		}]
     });
     
-  }); // end of document ready
-})(jQuery); // end of jQuery name space
+    instalarInsta({
+        token: "8566215578.6a7999e.1c23c76e25144487b7b9478102359099",
+        id: 8566215578
+    })
+    
+  });
+})(jQuery); 
+
+function instalarInsta(a) {
+  insertInstagram(), jQuery(".js-instagram").length && jQuery.ajax({
+    url: "https://api.instagram.com/v1/users/" + a.id + "/media/recent",
+    dataType: "jsonp",
+    type: "GET",
+    data: {
+      access_token: a.token,
+      count: 4
+    }
+  }).then(function(a) {
+  getPhotoInstagram(a), jQuery("#instagram-rodape").fadeIn()
+  })
+}
+
+function insertInstagram() {
+  jQuery(".boxInstafeed").before('<div class="wrapinstafeed"><div class="container"><div class="js-instagram instagram"><div class="photo-container"><ul></ul></div></div></div></div>')
+}
+
+function getPhotoInstagram(a) {
+  for (var n = jQuery(".instagram ul"), o = 0; o < a.data.length; o++) n.append('<li><a href="' + a.data[o].link + '" target="_blank"><figure class="photo" style="background-image: url(' + a.data[o].images.standard_resolution.url + ')"><div class="stats"><span class="likes"><i class="icon-heart"></i>' + a.data[o].likes.count + '</span><span class="comments"><i class="icon-chat"></i>' + a.data[o].comments.count + "</span></div></figure></a></li>")
+}
+
+
+
+var elementoInstafeed = "";
+
+
+

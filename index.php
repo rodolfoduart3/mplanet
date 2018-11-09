@@ -187,6 +187,8 @@
     </div>
     <div class="parallax"><img src="img/background1.jpg" alt="Unsplashed background img 3"></div>
   </div>
+  
+  <div class="boxInstafeed"></div>
 
   <footer class="page-footer teal">
     <div class="container">
