@@ -79,4 +79,15 @@
   Questione. Busque. Não fuja das imperfeições. 
   E no momento que a escuridão tomar conta, seja luz.";
   
+  $production_title = "Produção";
+  $production_item1 = "Criação, conceito, mixagem e masterização";
+  $production_item2 = "Rodolfo Ferrarini";
+  $production_coverArt1 = "Cover Art";
+  $production_coverArt2 = "Fulano 1 / Fulano 2";
+  $production_label1 = "Gravadora";
+  $production_label2 = "Trip to Enceladus";
+  
+  $moreMusic_soundcloud_footer = "Ouça também no Soundcloud";
+  $moreMusic_spotify_footer = "Esse é meu lançamento anterior";
+  
 ?>

@@ -103,90 +103,89 @@
 
   <section class="container musics">
     <h4 class="center title-section"><?php echo $musics_title; ?></h4>
-      <div class="row musics-description">
-        
-        <div class="col s12 m6">
-          <div class="music-block">
-            <h5 class="music-name"><?php echo $musics_track1_title; ?></h5>
-            <p><?php echo $musics_track1_desc; ?></p>
-          </div>
+    <div class="row musics-description">
+      <div class="col s12 m6">
+        <div class="music-block">
+          <h5 class="music-name"><?php echo $musics_track1_title; ?></h5>
+          <p><?php echo $musics_track1_desc; ?></p>
         </div>
-        <div class="col s12 m6">
-          <div class="music-block">
-            <h5 class="music-name"><?php echo $musics_track2_title; ?></h5>
-            <p><?php echo $musics_track2_desc; ?></p>
-          </div>
-        </div>
-        <div class="col s12 m6">
-          <div class="music-block">
-            <h5 class="music-name"><?php echo $musics_track3_title; ?></h5>
-            <p><?php echo $musics_track3_desc; ?></p>
-          </div>
-        </div>
-        <div class="col s12 m6">
-          <div class="music-block">
-            <h5 class="music-name"><?php echo $musics_track4_title; ?></h5>
-            <p><?php echo $musics_track4_desc; ?></p>
-          </div>
-        </div>        
-        <div class="col s12 m6">
-          <div class="music-block">
-            <h5 class="music-name"><?php echo $musics_track5_title; ?></h5>
-            <p><?php echo $musics_track5_desc; ?></p>
-          </div>
-        </div>        
-        <div class="col s12 m6">
-          <div class="music-block">
-            <h5 class="music-name"><?php echo $musics_track6_title; ?></h5>
-            <p><?php echo $musics_track6_desc; ?></p>
-          </div>
-        </div>
-        <div class="col s12 m6">
-          <div class="music-block">
-            <h5 class="music-name"><?php echo $musics_track7_title; ?></h5>
-            <p><?php echo $musics_track7_desc; ?></p>
-          </div>
-        </div>        
-        <div class="col s12 m6">
-          <div class="music-block">
-            <h5 class="music-name"><?php echo $musics_track8_title; ?></h5>
-            <p><?php echo $musics_track8_desc; ?></p>
-          </div>
-        </div>        
-        <div class="col s12 m6">
-          <div class="music-block">
-            <h5 class="music-name"><?php echo $musics_track9_title; ?></h5>
-            <p><?php echo $musics_track9_desc; ?></p>
-          </div>
-        </div>
-        
-        <?php /* 
-        <!-- <div class="col s12 m6">
-          <div class="music-block">
-            <h2 class="center brown-text"><i class="material-icons">group</i></h2>
-            <h5 class="music-name">Produção</h5>
-            <p class="light">
-              Criação, conceito, mixagem e masterização - Rodolfo Ferrarini.
-              Cover Art - Henrique Petrus / Fulano de Tal.
-              Gravadora - Trip to Enceladus.
-            </p>
-          </div>
-        </div> -->
-        */ ?>
-        
       </div>
-      
-  </section>
-
-  <div class="parallax-container valign-wrapper">
-    <div class="section no-pad-bot">
-      <div class="container">
-        <div class="row center">
-          <h5 class="header col s12 light">A modern responsive front-end framework based on Material Design</h5>
+      <div class="col s12 m6">
+        <div class="music-block">
+          <h5 class="music-name"><?php echo $musics_track2_title; ?></h5>
+          <p><?php echo $musics_track2_desc; ?></p>
+        </div>
+      </div>
+      <div class="col s12 m6">
+        <div class="music-block">
+          <h5 class="music-name"><?php echo $musics_track3_title; ?></h5>
+          <p><?php echo $musics_track3_desc; ?></p>
+        </div>
+      </div>
+      <div class="col s12 m6">
+        <div class="music-block">
+          <h5 class="music-name"><?php echo $musics_track4_title; ?></h5>
+          <p><?php echo $musics_track4_desc; ?></p>
+        </div>
+      </div>
+      <div class="col s12 m6">
+        <div class="music-block">
+          <h5 class="music-name"><?php echo $musics_track5_title; ?></h5>
+          <p><?php echo $musics_track5_desc; ?></p>
+        </div>
+      </div>
+      <div class="col s12 m6">
+        <div class="music-block">
+          <h5 class="music-name"><?php echo $musics_track6_title; ?></h5>
+          <p><?php echo $musics_track6_desc; ?></p>
+        </div>
+      </div>
+      <div class="col s12 m6">
+        <div class="music-block">
+          <h5 class="music-name"><?php echo $musics_track7_title; ?></h5>
+          <p><?php echo $musics_track7_desc; ?></p>
+        </div>
+      </div>
+      <div class="col s12 m6">
+        <div class="music-block">
+          <h5 class="music-name"><?php echo $musics_track8_title; ?></h5>
+          <p><?php echo $musics_track8_desc; ?></p>
+        </div>
+      </div>        
+      <div class="col s12 m6">
+        <div class="music-block">
+          <h5 class="music-name"><?php echo $musics_track9_title; ?></h5>
+          <p><?php echo $musics_track9_desc; ?></p>
         </div>
       </div>
     </div>
-    <div class="parallax"><img src="img/background3.jpg" alt="Unsplashed background img 3"></div>
+  </section>
+  
+  <div class="container production-block">
+    <h5 class="title"><?php echo $production_title; ?></h5>
+    <ul>
+      <li><b><?php echo $production_item1 ?></b> - <?php echo $production_item2 ?></li>
+      <li><b><?php echo $production_coverArt1 ?></b> - <?php echo $production_coverArt2 ?></li>
+      <li><b><?php echo $production_label1 ?></b> - <?php echo $production_label2 ?></li>
+    </ul>
+  </div>
+
+  <div class="parallax-container valign-wrapper footer-parallax">
+    <div class="section no-pad-bot">
+      <div class="container">
+        <div class="row center">
+          <div class="extern-players footer-box">
+            <h5><?php echo $moreMusic_soundcloud_footer; ?></h5>
+            <iframe width="100%" height="450" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/524398173&color=%23262626&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
+          </div>
+          <div class="extern-players footer-box">
+            <h5><?php echo $moreMusic_spotify_footer; ?></h5>
+            <iframe src="https://open.spotify.com/embed/album/6x67mVt9LX9j0JkcDR4qNh" width="100%" height="450" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="parallax"><img src="img/background1.jpg" alt="Unsplashed background img 3"></div>
   </div>
 
   <footer class="page-footer teal">

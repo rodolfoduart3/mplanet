@@ -79,4 +79,14 @@
   Ask. Search. Do not run away from imperfections.
   And the moment the darkness takes over, be light.";
   
+  $production_title = "Production";
+  $production_item1 = "Creation, concept, mixing and mastering";
+  $production_item2 = "Rodolfo Ferrarini";
+  $production_coverArt1 = "Cover Art";
+  $production_coverArt2 = "Fulano 1 / Fulano 2";
+  $production_label1 = "Record company";
+  $production_label2 = "Trip to Enceladus";
+  
+  $moreMusic_soundcloud_footer = "Also listen to Soundcloud";
+  $moreMusic_spotify_footer = "This is my previous release";
 ?>

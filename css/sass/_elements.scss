@@ -80,6 +80,14 @@ nav {
   @include mq('mobile') {
     min-height: 300px;
   }
+  &.footer-parallax {
+    @include mq('mobile') {
+      height: 1080px;
+      .section {
+        top: 0;
+      }
+    }
+  }
 }
   .parallax-container .section {
     width: 100%;
