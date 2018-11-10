@@ -1,6 +1,5 @@
 <?php 
-  //require_once('language/portuguese.php');
-  require_once('language/english.php');
+  require_once('language/load_language.php');
 ?>
 
 <!DOCTYPE html>
@@ -39,15 +38,14 @@
         <a id="logo-container" href="#" class="brand-logo center">
           <img src="img/logo-white.png" alt="Logo Madomo Planet - Home">
         </a>
-        
         <span class="right iconTranslate">
           <i class="material-icons">translate</i>
           <ul class="right listFlags no-display">
             <li class="flagImage">
-              <span><img src="img/flags/br_flag.png" alt="Portuguese Language"></span>
+              <span><img src="img/flags/br_flag.png" alt="Portuguese Language" class="pt_br"></span>
             </li>
             <li class="flagImage">
-              <span><img src="img/flags/uk_flag.png" alt="English Language"></span>
+              <span><img src="img/flags/uk_flag.png" alt="English Language" class="en"></span>
             </li>
             <li class="flagImage">
               <span><img src="img/flags/sp_flag.png" alt="Spanish Language"></span>
@@ -67,14 +65,7 @@
   <div id="index-banner" class="parallax-container">
     <div class="section no-pad-bot">
       <div class="container coverContainer">
-        
         <img src="img/coverart-principal.jpg" alt="Cover Art - Smile Album">
-        
-        <?php /* 
-        <h1 class="header center">Madomo Planet</h1>
-        <h2 class="center">...</h2>
-        */ ?>
-        
       </div>
     </div>
     <div class="parallax"><img src="img/background1.jpg" alt="Unsplashed background img 1"></div>
@@ -273,7 +264,7 @@
   </footer>
 
   <!--  Scripts-->
-  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <!-- <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script> -->
   <script src="js/materialize.js"></script>
   <script src="js/init.js"></script>
   <script type="text/javascript" src="js/slick.min.js"></script>

@@ -1,6 +1,6 @@
 (function($){
-  $(function(){
-
+  $(function(){    
+    
     $('.sidenav').sidenav();
     $('.parallax').parallax();
     
@@ -59,10 +59,3 @@ function insertInstagram() {
 function getPhotoInstagram(a) {
   for (var n = jQuery(".instagram ul"), o = 0; o < a.data.length; o++) n.append('<li><a href="' + a.data[o].link + '" target="_blank"><figure class="photo" style="background-image: url(' + a.data[o].images.standard_resolution.url + ')"><div class="stats"><span class="likes"><i class="icon-heart"></i>' + a.data[o].likes.count + '</span><span class="comments"><i class="icon-chat"></i>' + a.data[o].comments.count + "</span></div></figure></a></li>")
 }
-
-
-
-var elementoInstafeed = "";
-
-
-
