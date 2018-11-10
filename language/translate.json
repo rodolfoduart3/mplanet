@@ -5,7 +5,13 @@
       "music" : "Música",
       "contact" : "Contato",
       "mainInfo_title" : "meu novo álbum, meu novo propósito.",
-      "mainInfo_desc" : "esqueça tudo ao seu redor. deixe de lado sua hipocrisia e abra sua mente."      
+      "mainInfo_desc" : "esqueça tudo ao seu redor. deixe de lado sua hipocrisia e abra sua mente.",
+      "albumDescription_p1" : "Será que para tudo existe um propósito? Ou será que apenas encaramos os fatos de maneira diferente? Talvez nunca tenha refletido sobre isso, mas saiba que isso é essencial. Essencial para ser uma melhor pessoa consigo mesma. Essencial para quem te rodeia. Essencial para ser essencial.",
+      "albumDescription_p2" : "Nadar contra a correnteza não é tarefa fácil, e isso já sabemos. Mas o que não nos damos conta é que nos momentos mais difíceis, a única coisa que teremos que lidar, somos nós mesmos.",
+      "albumDescription_p3" : "Será que o propósito da sua vida é realmente esse? Será mesmo? Pense sobre.",
+      "albumDescription_p4" : "São mudanças internas que vão refletir inteiramente no seu 'eu'. Você não sabe o quão é capaz para seguir em frente. Sem receio de opiniões alheias, se preocupando apenas em ser você. Na mais pura essência.",
+      "albumDescription_p5" : "Esse álbum marcou transições importantes em minha vida. Seja ela profissional, artística, mas principalmente pessoal. Quero que ele faça parte de transições da sua vida também. Isso é o mínimo que posso fazer como forma de retribuição à vida e por tudo que ela já me proporcionou.",
+      "albumDescription_p6" : "As músicas que o compõem poderão te fazer refletir, ou apenas dançar. Poderão lhe trazer um sorriso ou ao mesmo emocionar. Mas saiba: espero que você também se encontre. Encontre em si o seu verdadeiro propósito."    
     },
     
     "en" : {
@@ -13,7 +19,13 @@
         "music" : "Music",
         "contact" : "Contact",
         "mainInfo_title" : "my new album, my new purpose.",
-        "mainInfo_desc" : "forget everything around you. set your hypocrisy aside and open your mind."
+        "mainInfo_desc" : "forget everything around you. set your hypocrisy aside and open your mind.",
+        "albumDescription_p1" : "Is there a purpose for everything? Or do we just look at the facts differently? Maybe you've never thought about it, but know that it's essential. Essential to be a better person to yourself. Essential for those around you. Essential to be essential.",
+        "albumDescription_p2" : "Swimming against the current is no easy task, and we already know that. But what we do not realize is that in the most difficult times, the only thing we have to deal with is ourselves.",
+        "albumDescription_p3" : "Is the purpose of your life really that? Really? Think about.",
+        "albumDescription_p4" : "These are internal changes that will reflect entirely in your 'I'. You do not know how you can move on. Not afraid of other people's opinions, just worrying about being you. In the purest essence.",
+        "albumDescription_p5" : "This album marked important transitions in my life. Be it professional, artistic, but mostly personal. I want it to be part of your life transitions as well. That is the least I can do as a way of retribution to life and for everything it has already given me.",
+        "albumDescription_p6" : "The songs that compose it can make you reflect, or just dance. They can bring you a smile or the same emotion. But know: I hope you find yourself. Find in yourself your true purpose."
     }
   
     

@@ -75,12 +75,12 @@
   $mainInfo_title = $file_json->mainInfo_title;
   $mainInfo_desc = $file_json->mainInfo_desc;
   
-  // $albumDescription_p1 = $file_json->albumDescription_p1;
-  // $albumDescription_p2 = $file_json->albumDescription_p2;
-  // $albumDescription_p3 = $file_json->albumDescription_p3;
-  // $albumDescription_p4 = $file_json->albumDescription_p4;
-  // $albumDescription_p5 = $file_json->albumDescription_p5;
-  // $albumDescription_p6 = $file_json->albumDescription_p6;
+  $albumDescription_p1 = $file_json->albumDescription_p1;
+  $albumDescription_p2 = $file_json->albumDescription_p2;
+  $albumDescription_p3 = $file_json->albumDescription_p3;
+  $albumDescription_p4 = $file_json->albumDescription_p4;
+  $albumDescription_p5 = $file_json->albumDescription_p5;
+  $albumDescription_p6 = $file_json->albumDescription_p6;
   // 
   // $musics_title = $file_json->musics_title;
   // 
