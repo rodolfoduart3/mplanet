@@ -2,7 +2,7 @@
 
 <script>
 
-  clearAllCookies();
+  // clearAllCookies();
   
   $(document).ready(function() { 
     
@@ -24,7 +24,7 @@
         dataType: 'json',
         data: lang,
         success: function(data) { 
-          eraseCookie("jsonLanguage");
+          // eraseCookie("jsonLanguage");
           createCookie("jsonLanguage", JSON.stringify(data[lang]), 1);
         }
     });
@@ -81,45 +81,45 @@
   $albumDescription_p4 = $file_json->albumDescription_p4;
   $albumDescription_p5 = $file_json->albumDescription_p5;
   $albumDescription_p6 = $file_json->albumDescription_p6;
-  // 
-  // $musics_title = $file_json->musics_title;
-  // 
-  // $musics_track1_title = $file_json->musics_track1_title;
-  // $musics_track1_desc = $file_json->musics_track1_desc;
-  // 
-  // $musics_track2_title = $file_json->musics_track2_title;
-  // $musics_track2_desc = $file_json->musics_track2_desc;
-  // 
-  // $musics_track3_title = $file_json->musics_track3_title;
-  // $musics_track3_desc = $file_json->musics_track3_desc;
-  // 
-  // $musics_track4_title = $file_json->musics_track4_title;
-  // $musics_track4_desc = $file_json->musics_track4_desc;
-  // 
-  // $musics_track5_title = $file_json->musics_track5_title;
-  // $musics_track5_desc = $file_json->musics_track5_desc;
-  // 
-  // $musics_track6_title = $file_json->musics_track6_title;
-  // $musics_track6_desc = $file_json->musics_track6_desc;
-  // 
-  // $musics_track7_title = $file_json->musics_track7_title;
-  // $musics_track7_desc = $file_json->musics_track7_desc;
-  // 
-  // $musics_track8_title = $file_json->musics_track8_title;
-  // $musics_track8_desc = $file_json->musics_track8_desc;
-  // 
-  // $musics_track9_title = $file_json->musics_track9_title;
-  // $musics_track9_desc = $file_json->musics_track9_desc;
-  // 
-  // $production_title = $file_json->production_title;
-  // $production_item1 = $file_json->production_item1;
-  // $production_item2 = $file_json->production_item2;
-  // $production_coverArt1 = $file_json->production_coverArt1;
-  // $production_coverArt2 = $file_json->production_coverArt2;
-  // $production_label1 = $file_json->production_label1;
-  // $production_label2 = $file_json->production_label2;
-  // 
-  // $moreMusic_soundcloud_footer = $file_json->moreMusic_soundcloud_footer;
-  // $moreMusic_spotify_footer = $file_json->moreMusic_spotify_footer;
+  
+  $musics_title = $file_json->musics_title;
+  
+  $musics_track1_title = $file_json->musics_track1_title;
+  $musics_track1_desc = $file_json->musics_track1_desc;
+  
+  $musics_track2_title = $file_json->musics_track2_title;
+  $musics_track2_desc = $file_json->musics_track2_desc;
+  
+  $musics_track3_title = $file_json->musics_track3_title;
+  $musics_track3_desc = $file_json->musics_track3_desc;
+  
+  $musics_track4_title = $file_json->musics_track4_title;
+  $musics_track4_desc = $file_json->musics_track4_desc;
+  
+  $musics_track5_title = $file_json->musics_track5_title;
+  $musics_track5_desc = $file_json->musics_track5_desc;
+  
+  $musics_track6_title = $file_json->musics_track6_title;
+  $musics_track6_desc = $file_json->musics_track6_desc;
+  
+  $musics_track7_title = $file_json->musics_track7_title;
+  $musics_track7_desc = $file_json->musics_track7_desc;
+  
+  $musics_track8_title = $file_json->musics_track8_title;
+  $musics_track8_desc = $file_json->musics_track8_desc;
+  
+  $musics_track9_title = $file_json->musics_track9_title;
+  $musics_track9_desc = $file_json->musics_track9_desc;
+  
+  $production_title = $file_json->production_title;
+  $production_item1 = $file_json->production_item1;
+  $production_item2 = $file_json->production_item2;
+  $production_coverArt1 = $file_json->production_coverArt1;
+  $production_coverArt2 = $file_json->production_coverArt2;
+  $production_label1 = $file_json->production_label1;
+  $production_label2 = $file_json->production_label2;
+  
+  $moreMusic_soundcloud_footer = $file_json->moreMusic_soundcloud_footer;
+  $moreMusic_spotify_footer = $file_json->moreMusic_spotify_footer;
   
 ?>

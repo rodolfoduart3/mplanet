@@ -32,6 +32,8 @@
 
 <body>
   
+  <p><?php echo $file_json; ?></p>
+  
   <div class="navbar-fixed">
     <nav role="navigation">
       <div class="nav-wrapper container">
