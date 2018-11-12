@@ -96,12 +96,51 @@
   <section class="container musics">
     <h4 class="center title-section" id="musics_title"></h4>
     <div class="row musics-description">
+      
+      
       <div class="col s12 m6">
         <div class="music-block">
           <h5 class="music-name" id="musics_track1_title"></h5>
           <p id="musics_track1_desc"></p>
         </div>
       </div>
+      <div class="col s12 m6">
+        <div class="music-block">
+          <h5 class="music-name" id="musics_track2_title"></h5>
+          <p id="musics_track2_desc"></p>
+        </div>
+      </div>
+      <div class="col s12 m6">
+        <div class="music-block">
+          <h5 class="music-name" id="musics_track3_title"></h5>
+          <p id="musics_track3_desc"></p>
+        </div>
+      </div>
+      <div class="col s12 m6">
+        <div class="music-block">
+          <h5 class="music-name" id="musics_track4_title"></h5>
+          <p id="musics_track4_desc"></p>
+        </div>
+      </div>
+      <div class="col s12 m6">
+        <div class="music-block">
+          <h5 class="music-name" id="musics_track5_title"></h5>
+          <p id="musics_track5_desc"></p>
+        </div>
+      </div>
+      <div class="col s12 m6">
+        <div class="music-block">
+          <h5 class="music-name" id="musics_track6_title"></h5>
+          <p id="musics_track6_desc"></p>
+        </div>
+      </div>
+      
+      
+      
+      
+      
+      
+      
       <div class="col s12 m6">
         <div class="music-block">
           <h5 class="music-name"><?php echo $musics_track2_title; ?></h5>
