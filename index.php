@@ -1,4 +1,5 @@
 <?php 
+  // require_once('language/english.php');
   require_once('language/load_language.php');
 ?>
 
@@ -31,9 +32,7 @@
 </head>
 
 <body>
-  
-  <p><?php echo $file_json; ?></p>
-  
+
   <div class="navbar-fixed">
     <nav role="navigation">
       <div class="nav-wrapper container">
@@ -55,9 +54,9 @@
           </ul>
         </span>
         <ul id="nav-mobile" class="sidenav">
-          <li><a href="#"><?php echo $bio; ?></a></li>
-          <li><a href="#"><?php echo $music; ?></a></li>
-          <li><a href="#"><?php echo $contact; ?></a></li>
+          <li id="bio"><a href="#"></a></li>
+          <li id="music"><a href="#"></a></li>
+          <li id="contact"><a href="#"></a></li>
         </ul>
         <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
       </div>
@@ -75,8 +74,8 @@
   
   <section class="main-information">
     <div class="container">
-      <h3 class="title-section center"><?php echo $mainInfo_title; ?></h3>
-      <p class="desc-section center"><?php echo $mainInfo_desc; ?></p>
+      <h3 class="title-section center" id="mainInfo_title"></h3>
+      <p class="desc-section center" id="mainInfo_desc"></p>
       <div class="extern-players">
         <iframe src="https://open.spotify.com/embed/user/madomoplanet/playlist/5o4udqpVjbQtbvFXwRqiB5" width="100%" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
       </div>
@@ -85,22 +84,22 @@
   
   <section class="album-description">
     <div class="container center">
-      <p><?php echo $albumDescription_p1; ?></p>
-      <p><?php echo $albumDescription_p2; ?></p>
-      <p><i><?php echo $albumDescription_p3; ?></i></p>
-      <p><?php echo $albumDescription_p4; ?></p>
-      <p><?php echo $albumDescription_p5; ?></p>
-      <p><?php echo $albumDescription_p6; ?></p>
+      <p id="albumDescription_p1"></p>
+      <p id="albumDescription_p2"></p>
+      <i><p id="albumDescription_p3"></p></i>
+      <p id="albumDescription_p4"></p>
+      <p id="albumDescription_p5"></p>
+      <p id="albumDescription_p6"></p>
     </div>
   </section>
 
   <section class="container musics">
-    <h4 class="center title-section"><?php echo $musics_title; ?></h4>
+    <h4 class="center title-section" id="musics_title"></h4>
     <div class="row musics-description">
       <div class="col s12 m6">
         <div class="music-block">
-          <h5 class="music-name"><?php echo $musics_track1_title; ?></h5>
-          <p><?php echo $musics_track1_desc; ?></p>
+          <h5 class="music-name" id="musics_track1_title"></h5>
+          <p id="musics_track1_desc"></p>
         </div>
       </div>
       <div class="col s12 m6">
@@ -266,7 +265,7 @@
   </footer>
 
   <!--  Scripts-->
-  <!-- <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script> -->
+  <script src="js/jquery.min.js"></script>
   <script src="js/materialize.js"></script>
   <script src="js/init.js"></script>
   <script type="text/javascript" src="js/slick.min.js"></script>
