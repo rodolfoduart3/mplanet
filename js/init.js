@@ -31,8 +31,9 @@
     });
     
     instalarInsta({
-        token: "8566215578.6a7999e.1c23c76e25144487b7b9478102359099",
-        id: 8566215578
+        // https://maestrooo.com/instagram
+        token: "598137428.6a7999e.cebabb381334452cac5b4e11b1bc85f7",
+        id: 598137428
     })
     
   });

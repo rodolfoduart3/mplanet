@@ -1,3 +1,5 @@
+<?php // https://developer.spotify.com/documentation/widgets/guides/adding-a-spotify-play-button/ ?>
+
 <section class="container musics">
   <h4 class="center title-section" id="musics_title"></h4>
   <div class="row musics-description">
