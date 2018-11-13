@@ -1,0 +1,7 @@
+
+.page-footer {
+  background-color: $primaryColor;
+  .footer-copyright {
+    @include linearGradient($primaryColor, lighten($primaryColor, 10%));
+  }
+}

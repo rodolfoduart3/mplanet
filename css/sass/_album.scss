@@ -58,6 +58,9 @@ h3.title-section {
   }
   .musics-description {
     font-family: $font3;
+    height: 400px;
+    @include mq('desktop') { height: 350px; }
+    @include mq('mobile') { height: auto; }
     .music-block {
       height: 100%;
       padding-top: 10px;
@@ -109,7 +112,7 @@ h3.title-section {
   width: 55%;
   height: 250px;
   padding: 20px;
-  margin-bottom: 20px;
+  margin-bottom: 40px;
   text-align: center;
   font-family: $font3;
   font-size: 20px;

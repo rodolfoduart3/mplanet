@@ -4,7 +4,7 @@ body {
 }
 
 .navbar-fixed {
-  z-index: 2 !important;
+  z-index: 998 !important;
 }
 
 nav {
@@ -47,6 +47,17 @@ nav {
       span {
         display: inline-block;
         vertical-align: middle;
+      }
+    }
+  }
+  
+  // Nav Mobile
+  .sidenav {
+    li {
+      color: $primaryColor;
+      &:hover {
+        background-color: $extraColor;
+        color: $secondColor;
       }
     }
   }
