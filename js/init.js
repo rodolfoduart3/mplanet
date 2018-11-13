@@ -34,7 +34,27 @@
         // https://maestrooo.com/instagram
         token: "598137428.6a7999e.cebabb381334452cac5b4e11b1bc85f7",
         id: 598137428
-    })
+    });
+    
+    $('.icones-flutuantes li.main').on('click', function(e){
+  		$('.overlay-total').toggleClass('ativo');
+  		e.preventDefault();
+  		$('.icones-flutuantes').find('li').each(function() {
+  			var element = $(this);
+  			if (!element.hasClass('main')) {
+  				if(element.hasClass('visible')) {
+  					element.css('opacity','0');
+  					element.removeClass('visible');
+  				} else {
+  					element.css('opacity','1');
+  					element.addClass('visible');
+  				}
+  			} else {
+  				element.toggleClass('showAll');
+  				element.parent().toggleClass('showAll');
+  			}
+  		});
+  	});
     
   });
 })(jQuery); 
