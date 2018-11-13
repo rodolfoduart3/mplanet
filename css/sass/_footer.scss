@@ -30,7 +30,14 @@
   z-index: 9999;
   .socialLinks {
     margin: 0;
+    overflow: hidden;
+    height: 70px;
     @include transform(rotate(180deg));
+    
+    &.showAll {
+      height: auto;
+      overflow: inherit;
+    }
     
     & > li {
       @include transform(rotate(-180deg));
@@ -128,6 +135,8 @@
               top: -2px;
               height: 60px;
               line-height: 56px;
+              text-align: center;
+              padding-left: 10px;
               @include border-radius(16px 0 0 16px);
             }
           }          

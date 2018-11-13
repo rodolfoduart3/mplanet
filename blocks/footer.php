@@ -57,7 +57,7 @@
             <li>
               <a href="mailto:madomo.planet@gmail.com" target="_blank" class="white-text" rel="me nofollow" title="Contato para Remixes & Promos">
                 <i class="icon-email"></i>
-                <span>Remixes & Promos</span>
+                <span>E-mail</span>
               </a>
             </li>
             
