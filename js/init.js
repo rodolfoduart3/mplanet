@@ -55,23 +55,31 @@
   			}
   		});
   	});
-    
-    $(window).scroll(function() { 
-      if (document.body.scrollHeight == document.body.scrollTop + window.innerHeight) {
-        $(".boxLogo img").css()
+
+    // Animate logo - footer
+    var lastScrollTop = 0;
+    $(window).scroll(function(event) {
+      var $width = jQuery(window).width();
+      if($width < 769) {
+        var st = $(this).scrollTop();
+        if (st > lastScrollTop){
+          if (document.body.scrollHeight == document.body.scrollTop + window.innerHeight) {
+            $(".boxLogo img").toggleClass("onRotate");
+          }
+        }
+        lastScrollTop = st;
       }
     });
     
   });
 })(jQuery); 
 
-function rotateElement(degrees) {
-  $(this).css({'-webkit-transform' : 'rotate('+ degrees +'deg)',
-               '-moz-transform' : 'rotate('+ degrees +'deg)',
-               '-ms-transform' : 'rotate('+ degrees +'deg)',
-               'transform' : 'rotate('+ degrees +'deg)'});
-  return $(this);
-};
+// function goToTop() {
+//   $("a[href='#top']").click(function() {
+//     $("html, body").animate({ scrollTop: 0 }, "slow");
+//       return false;
+//   });
+// }
 
 function instalarInsta(a) {
   insertInstagram(), jQuery(".js-instagram").length && jQuery.ajax({

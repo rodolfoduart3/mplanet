@@ -65,7 +65,7 @@ h3.title-section {
     font-family: $font3;
     height: 400px;
     @include mq('desktop-wide') { height: 480px; }
-    @include mq('mobile') { height: 100%; }
+    @include mq('mobile') { height: max-content; }
     .music-block {
       height: 100%;
       padding-top: 10px;

@@ -1,6 +1,6 @@
 
 <div class="titleInsta container">
-  <h5 id="followInsta-title">Siga-me no Instagram!</h5>
+  <h5 id="followInsta-title"></h5>
   <a href="https://www.instagram.com/madomoplanet/" target="_blank" class="usernameInsta">
     <span><b>@</b>madomoplanet</span>
   </a>
@@ -103,8 +103,9 @@
     </div>
   </div>
   <div class="footer-copyright">
-    <div class="container center">
+    <div class="container">
       <span>Made by PLAN3T</span>
+      <span>© Copyright 2018 - Madomo Planet - All Rights Reserved</span>
     </div>
   </div>
 </footer>

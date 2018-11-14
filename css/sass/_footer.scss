@@ -39,14 +39,16 @@
       }
       @include mq('mobile') {
         margin: 0 auto;
-        &:hover {
-          @include transform(rotate(360deg));
-        }
+      }
+      &.onRotate {
+        @include transform(rotate(360deg));
       }
     }
   }
   
   .footer-copyright {
+    padding-bottom: 20px;
+    span { display: block; text-align: center; }
     @include linearGradient($primaryColor, lighten($primaryColor, 10%));
   }
 }
