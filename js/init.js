@@ -56,8 +56,22 @@
   		});
   	});
     
+    $(window).scroll(function() { 
+      if (document.body.scrollHeight == document.body.scrollTop + window.innerHeight) {
+        $(".boxLogo img").css()
+      }
+    });
+    
   });
 })(jQuery); 
+
+function rotateElement(degrees) {
+  $(this).css({'-webkit-transform' : 'rotate('+ degrees +'deg)',
+               '-moz-transform' : 'rotate('+ degrees +'deg)',
+               '-ms-transform' : 'rotate('+ degrees +'deg)',
+               'transform' : 'rotate('+ degrees +'deg)'});
+  return $(this);
+};
 
 function instalarInsta(a) {
   insertInstagram(), jQuery(".js-instagram").length && jQuery.ajax({

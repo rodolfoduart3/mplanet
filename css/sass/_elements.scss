@@ -9,6 +9,7 @@ body {
 
 nav {
   background: $primaryColor;
+  border-bottom: 1px solid $secondColor;
   ul {
     a {
       color: $secondColor;
@@ -88,8 +89,15 @@ nav {
   height: auto;
   min-height: 600px;
   line-height: 0;
+  .section {
+    width: 100%;
+  }
   @include mq('mobile') {
-    min-height: 300px;
+    min-height: 400px;
+    .section {
+      padding: 0;
+      margin: 50px 0;
+    }
   }
   &.footer-parallax {
     @include mq('mobile') {
@@ -99,34 +107,4 @@ nav {
       }
     }
   }
-}
-  .parallax-container .section {
-    width: 100%;
-  }
-
-@media only screen and (max-width : 992px) {
-  .parallax-container .section {
-    position: absolute;
-    top: 40%;
-  }
-  #index-banner .section {
-    top: 10%;
-  }
-}
-
-@media only screen and (max-width : 600px) {
-  #index-banner .section {
-    top: 0;
-  }
-}
-
-.icon-block {
-  padding: 0 15px;
-}
-.icon-block .material-icons {
-  font-size: inherit;
-}
-
-footer.page-footer {
-  margin: 0;
 }

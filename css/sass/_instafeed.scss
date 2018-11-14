@@ -1,3 +1,26 @@
+.titleInsta {
+  margin: 20px auto;
+  @include mq('mobile') {
+    margin: 40px auto;
+  }
+  h5, .usernameInsta {
+    color: $secondColor;
+    font-size: 30px;
+    font-family: $font3;
+    text-align: center;
+  }
+  .usernameInsta {
+    display: inline-block;
+    width: 100%;
+    font-size: 25px;
+    @include transition(all .3s ease-in-out);
+    @include hoverColor($secondColor, $extraColor);
+    b {
+      margin-right: 5px;
+    }
+  }
+}
+
 .boxInstafeed {
   margin-top: -20px;
 }
@@ -10,7 +33,7 @@
     margin: 0 auto;
     @include mq('mobile') {
     	display: block;
-    	width: 95%;
+    	width: 100%;
     	margin: 0 auto;
     }
     > a:before {

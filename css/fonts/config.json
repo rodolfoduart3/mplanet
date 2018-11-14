@@ -245,6 +245,12 @@
       "css": "folder-open",
       "code": 59399,
       "src": "fontawesome"
+    },
+    {
+      "uid": "31951fbb9820ed0690f675b3d495c8da",
+      "css": "chat-empty",
+      "code": 61670,
+      "src": "fontawesome"
     }
   ]
 }

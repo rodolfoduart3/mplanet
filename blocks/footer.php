@@ -1,22 +1,31 @@
 
+<div class="titleInsta container">
+  <h5 id="followInsta-title">Siga-me no Instagram!</h5>
+  <a href="https://www.instagram.com/madomoplanet/" target="_blank" class="usernameInsta">
+    <span><b>@</b>madomoplanet</span>
+  </a>
+</div>
 <div class="boxInstafeed"></div>
 
 <footer class="page-footer">
   <div class="container">
     <div class="row">
-      <div class="col l6 s12">
-        <h5 class="white-text" id="nameProject"></h5>
-        <p class="grey-text text-lighten-4" id="aboutMe"></p>
+      <div class="col m6 s12 boxAbout">
+        <?php /* <h5 id="nameProject"></h5> */ ?>
+        <p class="infoAbout" id="aboutMe"></p>
       </div>
-      <div class="col m6 s12">
-        <h5 class="white-text" id="socialLinks_title"></h5>
+      <div class="col m6 s12 boxLogo">
+        <img src="./img/logo2-white" alt="">
+      </div>
+      <div class="col s12">
+        <?php /* <h5 class="white-text" id="socialLinks_title"></h5> */ ?>
         
         <div class="overlay-total"></div>
         <div class="icones-flutuantes">
           <ul class="socialLinks">
             
             <li class="main">
-              <i class="icon-globe"></i>
+              <i class="icon-chat-empty"></i>
             </li>
             
             <li>
@@ -80,6 +89,8 @@
           </ul>
         </div>
         
+        <?php // Form Paypal ?>
+        <?php /* 
         <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
           <input type="hidden" name="cmd" value="_s-xclick">
           <input type="hidden" name="encrypted" value="-----BEGIN PKCS7-----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-----END PKCS7-----
@@ -87,7 +98,7 @@
           <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
           <img alt="" border="0" src="https://www.paypalobjects.com/pt_BR/i/scr/pixel.gif" width="1" height="1">
         </form>
-        
+        */ ?>
       </div>
     </div>
   </div>
