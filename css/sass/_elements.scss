@@ -79,10 +79,7 @@ nav {
             width: 100%;
             &:before {
               color: $secondColor;
-              margin-top: 12px;
-              @include mq('mobile') {
-                margin-top: 18px;
-              }
+              margin-top: 18px;
             }
           }
         }
@@ -93,12 +90,16 @@ nav {
 
 #index-banner {
   height: 100%;
+  margin-top: -56px;
   .coverContainer {
     width: 100%;
     text-align: center;
     @include absolutecenter();
     img {
-      // width: 560px;
+      @include transition(all .3s ease-in-out);
+      &:hover {
+        @include transform(rotate(-5deg));
+      }
       @include mq('mobile'){
         width: 80%;
       }
@@ -123,7 +124,6 @@ nav {
     width: 100%;
   }
   @include mq('mobile') {
-    // min-height: 400px;
     .section {
       padding: 0;
       margin: 0;
