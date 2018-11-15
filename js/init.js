@@ -5,6 +5,8 @@
     $('.parallax').parallax();
     $('#mosaicBio').Mosaic();
     
+    $('.tabs').tabs({ 'swipeable': true });
+    
     $('.iconTranslate').on('click', function() {
       $('.listFlags').slideToggle("fast");
     });

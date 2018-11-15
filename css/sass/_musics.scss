@@ -1,0 +1,46 @@
+.tabs {
+  margin: 20px 0 30px;
+  .indicator { background-color: $extraColor; }
+  li {
+    a {
+      color: $primaryColor !important;
+      &:focus {
+        background-color: rgba($extraColor, 0.1) !important;
+      }
+      &:focus.active {
+        background-color: rgba($extraColor, 0.2) !important;
+      }
+      &.active {
+        color: $extraColor !important;
+      }
+      i {
+        &.icon-soundcloud, &.icon-mixcloud { margin-right: 6px; }
+      }
+      @include mq('mobile') {
+        i {
+          display: block;
+          height: 100%;
+          &:before {
+            font-size: 30px;
+            margin-top: 8px;
+          }
+        }
+        span { display: none; }
+      }
+    }
+  }
+}
+
+.tabs-content {
+  height: 100% !important; 
+  #tab-musics-soundcloud {
+    overflow: auto;
+    padding: 0 10px 0 0;
+    @include mq('mobile') {
+      padding: 0;
+    }
+  }
+  iframe {
+    margin: 10px 0;
+  }
+}
