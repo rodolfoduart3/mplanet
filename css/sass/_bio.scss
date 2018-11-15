@@ -1,0 +1,37 @@
+.bioInformation {
+  h5, .title-section, .infoAbout {
+    color: $secondColor;
+    text-align: center;
+    @include mq('mobile') {
+      text-align: right;
+    }
+  }
+}
+
+.presskitBox {
+  .imagotipo {
+    display: inline-block;
+    margin-bottom: 40px;
+    img {
+      @include transition(all .3s ease-in-out);
+      margin: 0 auto;
+      display: block;
+      @include size(70%, auto);
+      @include mq('mobile') {
+        @include size(100%, auto);
+      }
+      &:hover {
+        opacity: 0.5;
+      }
+    }
+  }
+  #mosaicBio {
+    margin: 40px 0;
+    img {
+      @include transition(all .3s ease-in-out);
+      &:hover {
+        opacity: 0.5;
+      }
+    }
+  }
+}

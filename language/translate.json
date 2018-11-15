@@ -43,7 +43,8 @@
         "moreMusic_spotify_footer" : "Esse é meu lançamento anterior",
         "aboutMe" : "DJ/Produtor brasileiro que tem uma única finalidade, fazer com que sua música quebre barreiras, conquistando seu espaço e admiração à cada evento. Com sua forte identidade sonora, Madomo Planet caminha em meio ao Techno, e aos poucos vai escrevendo sua história na cena. Projeto criado no fim de 2016 que já vem ganhando destaque com lançamentos em labels como: Piko Music (ITA), Warbeats Records (BRA) e Underxpression Records (BRA). Em constante evolução é possível dizer que isso é apenas o começo, e tenha certeza que Madomo Planet é o nome da ascensão.",
         "socialLinks_title" : "Redes Sociais",
-        "followInsta-title" : "Siga-me no Instragam!"
+        "followInsta-title" : "Siga-me no Instragam!",
+        "bio_title" : "Biografia"
     },
     
     "en" : {
@@ -89,7 +90,8 @@
         "moreMusic_spotify_footer" : "This is my previous release",
         "aboutMe" : "DJ/Brazilian producer that has a single purpose, to make its music to break down barriers, conquering its space and admiration to each event. With its strong sound identity, Madomo Planet walks in the midst of Techno, and gradually writes its story on the scene. Project created at the end of 2016 that has already gained prominence with releases in labels such as: Piko Music (ITA), Warbeats Records (BRA) and Underxpression Records (BRA). In constant evolution it is possible to say that this is just the beginning, and make sure that Madomo Planet is the name of the ascension.",
         "socialLinks_title" : "Social Networks",
-        "followInsta-title" : "Follow me on Instagram!"
+        "followInsta-title" : "Follow me on Instagram!",
+        "bio_title" : "Biography"
     }
     
 }

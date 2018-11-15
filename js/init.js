@@ -3,6 +3,7 @@
     
     $('.sidenav').sidenav();
     $('.parallax').parallax();
+    $('#mosaicBio').Mosaic();
     
     $('.iconTranslate').on('click', function() {
       $('.listFlags').slideToggle("fast");

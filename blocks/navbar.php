@@ -1,7 +1,7 @@
 <div class="navbar-fixed">
   <nav role="navigation">
     <div class="nav-wrapper container">
-      <a id="logo-container" href="#" class="brand-logo center">
+      <a id="logo-container" href="index.php" class="brand-logo center">
         <img src="img/logo-white.png" alt="Logo Madomo Planet - Home">
       </a>
       <span class="right iconTranslate">
@@ -19,9 +19,14 @@
         </ul>
       </span>
       <ul id="nav-mobile" class="sidenav">
-        <li><a href="#" id="bio"></a></li>
-        <li><a href="#" id="music"></a></li>
-        <li><a href="#" id="contact"></a></li>
+        <li class="homeLink">
+          <a href="index.php">
+            <i class="icon-home"></i>
+          </a>
+        </li>
+        <li><a href="bio.php" id="bio"></a></li>
+        <li><a href="music.php" id="music"></a></li>
+        <li><a href="contact.php" id="contact"></a></li>
       </ul>
       <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
     </div>

@@ -32,7 +32,7 @@
   // Localiza os ID's dentro dos elementos inseridos em @searchIn, e substitui pela informação do JSON
   function insertText() {
     var jsonComplete = JSON.parse(window.localStorage.getItem('jsonLanguage'));
-    var searchIn = ".sidenav, .main-information, .album-description, .musics, .production-block, .page-footer, .extern-players, .titleInsta";
+    var searchIn = ".sidenav, .main-information, .album-description, .musics, .production-block, .page-footer, .extern-players, .titleInsta, .bioInformation, .presskitBox";
     $(searchIn).find('[id]').each(function() {
       var element = $(this).attr("id");
       $(this).text(jsonComplete[element]);
