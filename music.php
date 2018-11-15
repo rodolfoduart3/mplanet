@@ -4,7 +4,7 @@
 <html>
   <?php include('blocks/head.php') ?>
   
-  <body>
+  <body class="music-page">
     <?php include('blocks/navbar.php'); ?>
     
     <section class="container">
@@ -83,11 +83,8 @@
     
     </section>
     
-    
-    
-    
     <footer>
-      <?php include('blocks/footerFixed.php') ?>
+      <?php include('blocks/footer.php') ?>
     </footer>
     
     <?php include('blocks/scripts.php') ?>

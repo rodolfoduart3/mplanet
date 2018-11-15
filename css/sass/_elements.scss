@@ -35,10 +35,12 @@ nav {
   }
   .listFlags {
     position: absolute;
-    right: -6px;
+    left: -4px;
     top: 64px;
     background-color: rgba($primaryColor, 0.9);
     z-index: 1;
+    border: 1px solid $secondColor;
+    border-top: none;
     @include mq('mobile') {
       top: 55px;
     }
@@ -63,9 +65,6 @@ nav {
       @include transition(all .3s ease-in-out);
       &:hover {
         background-color: darken($extraColor, 25%);
-        a {
-          font-weight: 600;
-        }
       }
       &.homeLink {
         border-bottom: 1px solid $secondColor;

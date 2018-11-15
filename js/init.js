@@ -4,6 +4,7 @@
     $('.sidenav').sidenav();
     $('.parallax').parallax();
     $('#mosaicBio').Mosaic();
+    $('#mensagem').trigger('autoresize'); 
     
     $('.tabs').tabs({ 'swipeable': true });
     
@@ -83,6 +84,14 @@
 //       return false;
 //   });
 // }
+
+function submitFormContact() {
+  $("#formulario_contato").submit(function () {
+    if ($(".nome").val() == "" && $(".email").val() == "") {
+      alert("Preencha os campos corretamente!");
+    }
+  });
+}
 
 function instalarInsta(a) {
   insertInstagram(), jQuery(".js-instagram").length && jQuery.ajax({

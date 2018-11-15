@@ -116,10 +116,11 @@
       &.main {
         opacity: 1;
         background-color: lighten($primaryColor, 30%);
+        border: 2px solid $secondColor;
         @include transition(all .3s ease-out);
         i {
           &:before{
-            top: 10px; left: 13px;
+            top: 8px; left: 11px;
           }
           @include mq('mobile') {
             margin-left: 7px;

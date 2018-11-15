@@ -10,8 +10,8 @@
       $mail->Host       = 'smtp.gmail.com';     
       $mail->SMTPSecure = "tls";                #remova se nao usar gmail
       $mail->Port       = 587;                  #remova se nao usar gmail
-      $mail->Username   = 'email@gmail.com'; 
-      $mail->Password   = 'senha';
+      $mail->Username   = 'madomoplanet.contact@gmail.com'; 
+      $mail->Password   = 'H1at0963';
       $mail->AddAddress($para);
       $mail->AddReplyTo($de);
       $mail->SetFrom($de);
@@ -24,6 +24,7 @@
     } catch (Exception $e) {
       $envio = false;
     }
-      return $envio;
-    }
+    
+    return $envio;
+  }
 ?>
