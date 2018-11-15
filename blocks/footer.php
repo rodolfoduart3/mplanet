@@ -10,12 +10,14 @@
 <footer class="page-footer">
   <div class="container">
     <div class="row">
+      <?php /* 
       <div class="col m6 s12 boxAbout">
-        <?php /* <h5 id="nameProject"></h5> */ ?>
+        <?php // <h5 id="nameProject"></h5> ?>
         <p class="infoAbout" id="aboutMe"></p>
       </div>
-      <div class="col m6 s12 boxLogo">
-        <img src="./img/logo2-white" alt="">
+      */ ?>
+      <div class="col s12 boxLogo">
+        <img src="./img/logo2-white.png" alt="">
       </div>
       <div class="col s12">
         <?php /* <h5 class="white-text" id="socialLinks_title"></h5> */ ?>

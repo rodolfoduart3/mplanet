@@ -2,26 +2,26 @@
 .page-footer {
   background-color: $primaryColor;
   
-  .boxAbout {
-    margin-top: 40px;
-    h5 {
-      font-family: $font3;
-      font-size: 35px;
-      color: $secondColor;
-      text-align: right;
-    }
-    .infoAbout {
-      font-family: $font2;
-      text-align: right;
-    }
-    @include mq('mobile') {
-      margin: 20px 0;
-      .infoAbout {
-        line-height: 1.6;
-        text-align: center;
-      }
-    }
-  }
+  // .boxAbout {
+  //   margin-top: 40px;
+  //   h5 {
+  //     font-family: $font3;
+  //     font-size: 35px;
+  //     color: $secondColor;
+  //     text-align: right;
+  //   }
+  //   .infoAbout {
+  //     font-family: $font2;
+  //     text-align: right;
+  //   }
+  //   @include mq('mobile') {
+  //     margin: 20px 0;
+  //     .infoAbout {
+  //       line-height: 1.6;
+  //       text-align: center;
+  //     }
+  //   }
+  // }
   
   .boxLogo {
     margin-top: 40px;
@@ -30,7 +30,7 @@
     }
     img {
       display: block;
-      width: 85%;
+      width: 35%;
       margin: 15px auto;
       background: none;
       @include transition(all .3s ease-in-out);
@@ -38,7 +38,8 @@
         @include transform(rotate(5deg));
       }
       @include mq('mobile') {
-        margin: 0 auto;
+        margin: 40px auto 10px;
+        width: 75%;
       }
       &.onRotate {
         @include transform(rotate(360deg));
