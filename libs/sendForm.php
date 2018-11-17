@@ -1,9 +1,8 @@
-<?php
+<?php 
 
   if($_POST) {
-    
     if (empty($_POST['name']) || empty($_POST['email']) || empty($_POST['message'])) {
-      echo "Preenche corretamente o formulário!";
+      echo "Fill out the form correctly!";
     } else {
       $name = utf8_decode($_POST['name']);
       $email = utf8_decode($_POST['email']);
@@ -27,8 +26,8 @@
       $Email->FromName = ($name);
       $Email->AddReplyTo($email, $name);
       $Email->AddAddress("madomoplanet.contact@gmail.com");
-      //$Email->AddCC('email@hotmail.com', 'Nome da pessoa'); // Copia
-      $Email->AddBCC('madomo.planet@gmail.com', 'Madomo Planet - Oficial'); // Cópia Oculta
+      //$Email->AddCC('email@hotmail.com', 'Name');
+      $Email->AddBCC('madomo.planet@gmail.com', 'Madomo Planet - Oficial');
 
       $Email->Subject = utf8_decode($subject);
       $Email->Body .= "<br/>
@@ -40,17 +39,18 @@
         echo '
         <script>
           $(document).ready(function(){
-            swal("Ops...","Houve um erro ao enviar a mensagem, tente novamente!", "error");
+            swal("Ops...","There was an error sending the message, please try again!", "error");
           });
         </script>';
       } else {
         echo '
         <script>
         $(document).ready(function(){
-          swal("Sucesso", "Sua mensagem foi enviada. \n Obrigado pelo contato!", "success");
+          swal("Success", "Your message has been sent. \n Thanks for the contact!", "success");
         });
         </script>';
-	    }	
+	    }
     }
-
   }
+  
+?>

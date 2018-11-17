@@ -14,7 +14,7 @@
             <span><img src="img/flags/uk_flag.png" alt="English Language" class="en"></span>
           </li>
           <li class="flagImage">
-            <span><img src="img/flags/sp_flag.png" alt="Spanish Language"></span>
+            <span><img src="img/flags/sp_flag.png" alt="Spanish Language" class="es"></span>
           </li>
         </ul>
       </span>

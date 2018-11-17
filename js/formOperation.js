@@ -21,32 +21,20 @@
             url: url,
             type: type,
             data: data,
-            success: function(response) {
-              setTimeout(function() { 
-                swal('Obrigado!', 'Retornarei sua mensagem o mais breve possível.', "success");
-                $('.showMessage').html(response); 
-              }, 1000);
-              setTimeout(function() { clearInput(); }, 1000);
-            },
-            beforeSend: function() {
-              $('.loadingImg').fadeIn('slow');
-            },
-            complete: function() { 
-              $('.loadingImg').fadeOut('slow');
-            },
+            success: function(response) { setTimeout(function() { clearInput(); }, 1000); },
+            beforeSend: function() { $('.loadingImg').fadeIn('slow'); },
+            complete: function() { $('.loadingImg').fadeOut('slow'); },
             error: function(response){
               setTimeout(function() {
                 swal('Ops...', 'Houve um problema!<br/>Tente mais tarde.', "warning");
               }, 500);
-              console.log(response.statusText);
+              $('.showMessage').html(response.statusText);
             }
           });          
         } else {
-          // alert('Email inválido!');
           swal('Ops...', 'O e-mail informado é inválido!', "error");
         }
       } else {
-        // alert('Preencha o formulário corretamente!');
         swal('Ops...', 'Preencha o formulário corretamente!', "warning");
       }
 
