@@ -2,6 +2,13 @@
 
 <script>
 
+  $('#load_screen').show();
+  
+  window.addEventListener('load', function() {
+    $('#load_screen').fadeOut(1000, "linear");
+    $('.loading').fadeOut(800, "linear");
+  });
+
   $(document).ready(function() { 
     loadJSON('pt_br');
     

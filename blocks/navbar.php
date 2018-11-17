@@ -32,3 +32,10 @@
     </div>
   </nav>
 </div>
+
+<?php // Loagind Page ?>
+<div id="load_screen">
+  <div class="loading">
+    <img src="./img/bars.svg" alt="Loading Page">
+  </div>
+</div>
