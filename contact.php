@@ -34,9 +34,9 @@
           </div>
         </form>
         <div class="boxLoading">
-          <img src="img/loading.gif" class="loadingImg" alt="Processando formulário">
+          <img src="img/loading.gif" class="loadingImg" alt="Loading">
         </div>
-        <div class="showMessage" style="background-color:#FFF;color:#000;"></div>
+      <div class="showMessage" style="background-color:#FFF;color:#000;text-align:center;"></div>
       </div>
       
     </section>

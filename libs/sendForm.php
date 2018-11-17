@@ -36,19 +36,10 @@
       <b>Mensagem:</b> $message <br/>";	
 
       if(!$Email->Send()){				
-        echo '
-        <script>
-          $(document).ready(function(){
-            swal("Ops...","There was an error sending the message, please try again!", "error");
-          });
-        </script>';
+        echo 'There was an error sending the message, please try again!';
+        header('HTTP/1.1 500 Internal Server Error');
       } else {
-        echo '
-        <script>
-        $(document).ready(function(){
-          swal("Success", "Your message has been sent. \n Thanks for the contact!", "success");
-        });
-        </script>';
+        echo 'Thank you! <br/> I will return your message as soon as possible.';
 	    }
     }
   }
