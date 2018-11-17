@@ -29,20 +29,20 @@
     <section class="container">
       <div class="row formContact">
         <h1 class="title-section">Formulário de Contato</h1>
-        <form class="col s12" id="formulario_contato">
+        <form id="form_contact" method="post" action="libs/sendForm.php" class="col s12">
           <div class="row">
             <div class="input-field col s12 m6">
-              <input id="name" type="text" />
+              <input type="text" name="name" required />
               <label for="name">Nome</label>
             </div>
             <div class="input-field col s12 m6">
-              <input id="email" type="email" />
+              <input type="email" name="email" required />
               <label for="email">E-mail</label>
             </div>
           </div>
           <div class="row">
             <div class="input-field col s12">
-              <textarea id="message" class="materialize-textarea"></textarea>
+              <textarea name="message" class="materialize-textarea" required></textarea>
               <label for="message">Digite sua mensagem...</label>            
             </div>
           </div>
@@ -50,6 +50,10 @@
             <input type="submit" value="Enviar" class="btn"/>
           </div>
         </form>
+        <div class="boxLoading">
+          <img src="img/loading.gif" class="loadingImg" alt="Processando formulário">
+        </div>
+        <div class="showMessage"></div>
       </div>
       
     </section>

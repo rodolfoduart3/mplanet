@@ -30,9 +30,22 @@
       font-size: 15px;
       font-weight: 600;
       @include transition(all .3s ease-in-out);
+      @include mq('mobile') {
+        width: 70%;
+      }
       &:hover {
         opacity: 0.7;
       }
+    }
+  }
+  .boxLoading {
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    height: 50px;
+    .loadingImg {
+      width: 50px;
+      display: none;
     }
   }
 }
