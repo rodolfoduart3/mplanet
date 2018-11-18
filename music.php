@@ -7,22 +7,24 @@
   <body class="music-page">
     <?php include('blocks/navbar.php'); ?>
     
+    <h2 class="forIndexation">Musics</h2>
+    
     <section class="container">
       <ul class="tabs">
         <li class="tab col s3">
-          <a class="active" href="#tab-musics-spotify">
+          <a class="active" href="#tab-musics-spotify" rel="nofollow">
             <i class="icon-spotify"></i>
             <span>Spotify</span>
           </a>
         </li>
         <li class="tab col s3">
-          <a href="#tab-musics-soundcloud">
+          <a href="#tab-musics-soundcloud" rel="nofollow">
             <i class="icon-soundcloud"></i>
             <span>Soundcloud</span>
           </a>
         </li>
         <li class="tab col s3">
-          <a href="#tab-musics-mixcloud">
+          <a href="#tab-musics-mixcloud" rel="nofollow">
             <i class="icon-mixcloud"></i>
             <span>Mixcloud</span>
           </a>

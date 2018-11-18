@@ -1,7 +1,7 @@
 
 <div class="titleInsta container">
   <h5 id="followInsta-title"></h5>
-  <a href="https://www.instagram.com/madomoplanet/" target="_blank" class="usernameInsta">
+  <a href="https://www.instagram.com/madomoplanet/" target="_blank" class="usernameInsta" rel="nofollow">
     <span><b>@</b>madomoplanet</span>
   </a>
 </div>
@@ -17,7 +17,7 @@
       </div>
       */ ?>
       <div class="col s12 boxLogo">
-        <img src="./img/logo2-white.png" alt="">
+        <img src="./img/logo2-white.png" alt="Logo Madomo Planet">
       </div>
       <div class="col s12">
         <?php /* <h5 class="white-text" id="socialLinks_title"></h5> */ ?>
@@ -101,6 +101,7 @@
           <img alt="" border="0" src="https://www.paypalobjects.com/pt_BR/i/scr/pixel.gif" width="1" height="1">
         </form>
         */ ?>
+        
       </div>
     </div>
   </div>

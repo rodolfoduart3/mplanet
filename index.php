@@ -17,12 +17,11 @@
     <div id="index-banner" class="parallax-container">
       <div class="section no-pad-bot">
         <div class="container coverContainer">
-          <img src="img/coverart-principal.jpg" alt="Cover Art - Smile Album">
+          <img src="img/coverart-principal.jpg" alt="Cover Art - New Album">
         </div>
       </div>
       <div class="parallax">
-        <?php /* <img src="img/bkg-2.jpg" alt=""> */ ?>
-        <img src="img/bkg-1.jpg" alt="">
+        <img src="img/bkg-1.jpg" alt="Main background image">
       </div>
     </div>
     
@@ -47,7 +46,7 @@
           </div>
         </div>
       </div>
-      <div class="parallax"><img src="img/bkg-1.jpg" alt=""></div>
+      <div class="parallax"><img src="img/bkg-1.jpg" alt="Secondary background image"></div>
     </div>
     
     <?php // InstaFeed e Redes Sociais ?>

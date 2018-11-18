@@ -9,6 +9,8 @@
     
     <?php include('blocks/navbar.php'); ?>
     
+    <h2 class="forIndexation">Contact</h2>
+    
     <section class="container">
       <div class="row formContact">
         <h1 class="title-section" id="contact_title"></h1>
@@ -34,7 +36,7 @@
           </div>
         </form>
         <div class="boxLoading">
-          <img src="img/loading.gif" class="loadingImg" alt="Loading">
+          <img src="img/loading.gif" class="loadingImg" alt="Processing Form">
         </div>
       <div class="showMessage" style="background-color:#FFF;color:#000;text-align:center;"></div>
       </div>
