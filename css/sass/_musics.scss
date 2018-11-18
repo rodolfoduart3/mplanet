@@ -14,7 +14,12 @@
         color: $extraColor !important;
       }
       i {
+        &:before { font-size: 17px; }
         &.icon-soundcloud, &.icon-mixcloud { margin-right: 6px; }
+      }
+      span {
+        font-family: $font3;
+        font-size: 15px;
       }
       @include mq('mobile') {
         i {

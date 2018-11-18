@@ -37,7 +37,7 @@ nav {
     position: absolute;
     left: -4px;
     top: 64px;
-    background-color: rgba($primaryColor, 0.9);
+    background-color: $primaryColor;
     z-index: 1;
     border: 1px solid $secondColor;
     border-top: none;
@@ -56,24 +56,32 @@ nav {
   
   // Nav Mobile
   .sidenav {
-    background-color: darken($extraColor, 10%);
+    // background-color: darken($extraColor, 10%);
+    background-color: rgba($primaryColor, 0.95);
+    border-right: 1px solid $secondColor;
     a {
       color: $secondColor;
+      font-family: $font2;
+      font-weight: 600;
+      letter-spacing: 0.7;
       @include transition(all .1s ease-in-out);
     }
     li {
       @include transition(all .3s ease-in-out);
       &:hover {
-        background-color: darken($extraColor, 25%);
+        // background-color: darken($extraColor, 25%);
+        background-color: $extraColor;
       }
       &.homeLink {
         border-bottom: 1px solid $secondColor;
-        padding-bottom: 15px;
         @include mq('mobile') {
-          padding-bottom: 7px;
         }
         a {
           text-align: center;
+          height: 63px;
+          @include mq('mobile') {
+            height: 55px;
+          }
           .icon-home {
             width: 100%;
             &:before {
@@ -111,6 +119,10 @@ nav {
   color: $secondColor; 
 }
 
+.sidenav-overlay {
+  background-color: rgba(0,0,0,0.75);
+}
+
 .parallax-container .parallax img {
   width: 100%;
 }
@@ -130,7 +142,7 @@ nav {
   }
   &.footer-parallax {
     @include mq('mobile') {
-      height: 1080px;
+      height: auto;
       .section {
         top: 0;
       }

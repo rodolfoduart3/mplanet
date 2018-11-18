@@ -15,9 +15,6 @@
     font-size: 25px;
     @include transition(all .3s ease-in-out);
     @include hoverColor($secondColor, $extraColor);
-    b {
-      margin-right: 5px;
-    }
   }
 }
 
