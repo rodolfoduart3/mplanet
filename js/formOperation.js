@@ -53,6 +53,8 @@
     
     function clearInput() {
       $(':input','#form_contact').not(':button, :submit, :reset, :hidden').val('');
+      $(':input','#form_contact').not(':button, :submit, :reset, :hidden').removeClass('active');
+      $('textarea').css('height','min-content');
     }
     
   });

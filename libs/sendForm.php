@@ -31,9 +31,9 @@
 
       $Email->Subject = utf8_decode($subject);
       $Email->Body .= "<br/>
-      <b>Nome: </b> $name <br/>									
-      <b>E-mail:</b> $email <br/>
-      <b>Mensagem:</b> $message <br/>";	
+      <b>Name: </b>" . $name . "<br/>								
+      <b>Email: </b>" . $email ."<br/><br/>
+      <b>Message: </b><br/>" . nl2br($message) . "<br/>";	
 
       if(!$Email->Send()){				
         echo 'There was an error sending the message, please try again!';
