@@ -10,7 +10,13 @@
   });
 
   $(document).ready(function() { 
-    loadJSON('pt_br');
+    
+    // Validação para preservar linguagem escolhida
+    if (window.localStorage.getItem('jsonLanguage') === null) {
+      loadJSON('pt_br');
+    } else {
+      insertText();
+    }
     
     // Controle de linguagens selecionadas
     $('.listFlags .flagImage').on('click', function() {
