@@ -69,7 +69,6 @@
           type: "warning",
           confirmButtonText: "OK" 
          });
-        swal('Ops...', 'Complete the form correctly!', "warning");
       }
 
       return false;
