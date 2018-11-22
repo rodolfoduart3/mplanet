@@ -13,7 +13,7 @@
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://www.madomoplanet.com"/>
   <meta property="og:description" content="DJ/Produtor brasileiro que tem uma única finalidade, fazer com que sua música quebre barreiras, conquistando seu espaço e admiração!" />
-  <meta property="og:image" content="https://www.madomoplanet.com/img/icon-file.png" />
+  <meta property="og:image" content="https://www.madomoplanet.com/img/icon-file-extra.png" />
 
   <link rel="icon" href="./img/icon-file.png" type="image/x-icon" />
   <link rel="shortcut icon" href="./img/icon-file.png" type="image/x-icon" />
