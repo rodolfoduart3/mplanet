@@ -22,8 +22,15 @@
             type: type,
             data: data,
             success: function(response) {
+              var lang = window.localStorage.getItem('jsonLanguage');
+              var convertJSON = JSON.parse(lang);
               setTimeout(function() {
-                swal('Thank you!', 'I will return your message as soon as possible.', "success");
+                swal({
+                  title: convertAux.swal_thankYou,
+                  text: convertAux.swal_returnMessage,
+                  type: "success",
+                  confirmButtonText: "OK" 
+                 });
               }, 1000);
               setTimeout(function() { clearInput(); }, 1000);
             },
@@ -31,15 +38,37 @@
             complete: function() { $('.loadingImg').fadeOut('slow'); },
             error: function(response) {
               setTimeout(function() {
-                swal('Ops...', 'There was a problem! <br/> Please try again later.', "warning");
+                var lang = window.localStorage.getItem('jsonLanguage');
+                var convertJSON = JSON.parse(lang);
+                swal({
+                  title: "Ops...",
+                  text: convertJSON.swal_errorSendEmail,
+                  type: "warning",
+                  confirmButtonText: "OK" 
+                 });
               }, 500);
               $('.showMessage').html(response.statusText);
             }
           });          
         } else {
-          swal('Ops...', 'Invalid email!', "error");
+          var lang = window.localStorage.getItem('jsonLanguage');
+          var convertJSON = JSON.parse(lang);
+          swal({
+            title: "Ops...",
+            text: convertJSON.swal_invalidEmail,
+            type: "error",
+            confirmButtonText: "OK" 
+           });
         }
       } else {
+        var lang = window.localStorage.getItem('jsonLanguage');
+        var convertJSON = JSON.parse(lang);
+        swal({
+          title: "Ops...",
+          text: convertJSON.swal_invalidFields,
+          type: "warning",
+          confirmButtonText: "OK" 
+         });
         swal('Ops...', 'Complete the form correctly!', "warning");
       }
 

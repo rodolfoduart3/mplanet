@@ -49,7 +49,12 @@
         "name_contact" : "Nome",
         "email_contact" : "E-mail",
         "message_contact" : "Digite sua mensagem...",
-        "btn_contact" : "Enviar"
+        "btn_contact" : "Enviar",
+        "swal_thankYou" : "Obrigado!",
+        "swal_returnMessage" : "Retornarei sua mensagem o mais breve possível.",
+        "swal_errorSendEmail" : "Houve um problema! \n Por favor, tente mais tarde.",
+        "swal_invalidEmail" : "E-mail inválido!",
+        "swal_invalidFields" : "Preencha o formulário corretamente!"
     },
     
     "en" : {
@@ -101,7 +106,12 @@
         "name_contact" : "Name",
         "email_contact" : "Email",
         "message_contact" : "Enter your message...",
-        "btn_contact" : "Send"
+        "btn_contact" : "Send",
+        "swal_thankYou" : "Thank you!",
+        "swal_returnMessage" : "I will return your message as soon as possible.",
+        "swal_errorSendEmail" : "There was a problem! \n Please try again later.",
+        "swal_invalidEmail" : "Invalid email!",
+        "swal_invalidFields" : "Complete the form correctly!"
     },
     
     "es" : {
@@ -153,7 +163,12 @@
         "name_contact" : "Nombre",
         "email_contact" : "Correo Electrónico",
         "message_contact" : "Digite su mensaje...",
-        "btn_contact" : "Enviar"
+        "btn_contact" : "Enviar",
+        "swal_thankYou" : "¡Muchas gracias!",
+        "swal_returnMessage" : "Voy a responder su mensaje tan pronto como sea posible.",
+        "swal_errorSendEmail" : "¡Ha habido un problema! \n Por favor, inténtelo más tarde.",
+        "swal_invalidEmail" : "¡Dirección de correo electrónico no válida!",
+        "swal_invalidFields" : "¡Rellene el formulario correctamente!"
 
     }
     
