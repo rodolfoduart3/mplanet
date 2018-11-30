@@ -48,9 +48,7 @@
     var searchIn = ".sidenav, .main-information, .album-description, .musics, .production-block, .page-footer, .extern-players, .titleInsta, .bioInformation, .presskitBox, .formContact";
     $(searchIn).find('[id]').each(function() {
       var element = $(this).attr("id");
-      // $(this).html(jsonComplete[element]);
       $(this).html(jsonComplete[element]);
-      console.log($(this));
     });
   }
   
