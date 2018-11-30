@@ -26,8 +26,8 @@
               var convertJSON = JSON.parse(lang);
               setTimeout(function() {
                 swal({
-                  title: convertAux.swal_thankYou,
-                  text: convertAux.swal_returnMessage,
+                  title: convertJSON.swal_thankYou,
+                  text: convertJSON.swal_returnMessage,
                   type: "success",
                   confirmButtonText: "OK" 
                  });
