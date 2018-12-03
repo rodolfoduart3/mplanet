@@ -1,6 +1,6 @@
 
 <div class="titleInsta container">
-  <h5 id="followInsta-title"></h5>
+  <h5 id="followInsta-title">Siga-me no Instragam!</h5>
   <a href="https://www.instagram.com/madomoplanet/" target="_blank" class="usernameInsta" rel="nofollow">
     <span><b>@</b>madomoplanet</span>
   </a>
@@ -10,18 +10,10 @@
 <footer class="page-footer">
   <div class="container">
     <div class="row">
-      <?php /* 
-      <div class="col m6 s12 boxAbout">
-        <?php // <h5 id="nameProject"></h5> ?>
-        <p class="infoAbout" id="aboutMe"></p>
-      </div>
-      */ ?>
       <div class="col s12 boxLogo">
         <img src="./img/logo2-white.png" alt="Logo Madomo Planet">
       </div>
       <div class="col s12">
-        <?php /* <h5 class="white-text" id="socialLinks_title"></h5> */ ?>
-        
         <div class="overlay-total"></div>
         <div class="icones-flutuantes">
           <ul class="socialLinks">

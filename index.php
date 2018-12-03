@@ -37,11 +37,11 @@
         <div class="container">
           <div class="row center">
             <div class="extern-players footer-box">
-              <h5 id="moreMusic_soundcloud_footer"></h5>
+              <h5 id="moreMusic_soundcloud_footer">Ouça também no Soundcloud</h5>
               <iframe width="100%" height="450" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/524398173&color=%23262626&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
             </div>
             <div class="extern-players footer-box">
-              <h5 id="moreMusic_spotify_footer"></h5>
+              <h5 id="moreMusic_spotify_footer">Esse é meu lançamento anterior</h5>
               <iframe src="https://open.spotify.com/embed/album/6x67mVt9LX9j0JkcDR4qNh" width="100%" height="450" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
             </div>
           </div>
