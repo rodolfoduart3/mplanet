@@ -17,8 +17,7 @@
     <div id="index-banner" class="parallax-container">
       <div class="section no-pad-bot">
         <div class="container coverContainer">
-          <?php // <img src="img/coverart-principal.jpg" alt="Cover Art - New Album"> ?>
-          <img src="https://via.placeholder.com/500x500" alt="Cover Art - New Album">
+          <img src="img/coverart-principal.png" alt="Cover Art - Smile">
         </div>
       </div>
       <div class="parallax">

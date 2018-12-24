@@ -73,8 +73,15 @@
 <div class="container production-block">
   <h5 class="title" id="production_title">Produção</h5>
   <ul>
-    <li><b><span id="production_item1">Criação, conceito, mixagem e masterização</span></b> - <span id="production_item2">Rodolfo Ferrarini</span></li>
-    <li><b><span id="production_coverArt1">Cover Art</span></b> - <span id="production_coverArt2">Fulano 1 / Fulano 2</span></li>
+    <li><b><span id="production_item1">Criação e conceito</span></b> - <span id="production_item2">Rodolfo Ferrarini</span></li>
+    <li><b><span id="production_coverArt1">Cover Art</span></b> - 
+      <a href="https://www.instagram.com/henriquepetrus/" target="_blank" rel="nofollow">
+        <span id="production_coverArt2_artist1">@henriquepetrus</span>
+      </a> / 
+      <a href="https://www.instagram.com/_gustavoandre/" target="_blank" rel="nofollow">
+        <span id="production_coverArt2_artist2">@_gustavoandre</span>
+      </a>
+    </li>
     <li><b><span id="production_label1">Gravadora</span></b> - <span id="production_label2">Trip to Enceladus</span></li>
   </ul>
 </div>

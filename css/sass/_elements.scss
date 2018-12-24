@@ -98,17 +98,26 @@ nav {
 #index-banner {
   height: 100%;
   margin-top: -56px;
+  &:before {
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: rgba(0,0,0,.7);
+  }
   .coverContainer {
     width: 100%;
     text-align: center;
     @include absolutecenter();
     img {
+      width: 45%;
+      @include box-shadow(0 0 25px $extraColor);
       @include transition(all .3s ease-in-out);
       &:hover {
-        @include transform(rotate(-5deg));
+        @include transform(scale(1.05));
       }
       @include mq('mobile'){
-        width: 80%;
+        width: 85%;
       }
     }
   }
@@ -141,6 +150,16 @@ nav {
     }
   }
   &.footer-parallax {
+    .parallax {
+      &:before {
+        content: '';
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        background-color: rgba(0,0,0,.7);
+        z-index: 1;
+      }
+    }
     @include mq('mobile') {
       height: auto;
       .section {

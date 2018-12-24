@@ -20,7 +20,7 @@ h3.title-section {
   h5 {
     font-family: $font3;
     color: $secondColor;
-    font-size: 26px;
+    font-size: 24px;
     margin-bottom: 25px;
   }
   &:hover {
@@ -83,7 +83,7 @@ h3.title-section {
           font-size: 25px; 
         }
         & + p {
-          font-size: 19px;
+          font-size: 18px;
           padding: 0 15px 10px;
           @include mq('mobile') {
             padding: 10px 36px; 
@@ -139,6 +139,10 @@ h3.title-section {
         margin-top: 30px;
       }
     }
+  }
+  a {
+    @include hoverColor($secondColor, $extraColor);
+    @include transition(all .3s ease-in-out);
   }
   @include mq('mobile') {
     color: $secondColor;
